@@ -39,7 +39,25 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 | 리포트 구성 항목 | `data/backup/HtmlReportRepository.kt` |
 | 화면 용어 (한/영) | `res/values/strings.xml`, `res/values-en/strings.xml` |
 
-## 아직 없는 것
+## 스크린샷
 
-- 스크린샷 — 텍스트 우선으로 만들었다. 추가할 때는 한/영 화면을 각각 캡처하고
-  longest edge ≤ 1800px 로 리사이즈해 `assets/img/` 에 두고 `<img>` 로 삽입한다.
+`assets/img/ko/`, `assets/img/en/` — 언어별 13장, **720px 폭 PNG**(합계 약 1.4MB).
+vc196 · Pixel 1080×2400 에뮬레이터에서 언어별로 샘플 데이터를 새로 주입해 촬영했다.
+
+UI 가 바뀌면 다시 촬영해야 한다. 순서:
+
+1. 에뮬레이터 부팅 → 디버그 APK 설치
+2. 상태바 정리 (시계 09:30 고정, 알림 숨김):
+   ```
+   adb shell am broadcast -a com.android.systemui.demo -e command enter
+   adb shell am broadcast -a com.android.systemui.demo -e command clock -e hhmm 0930
+   adb shell am broadcast -a com.android.systemui.demo -e command notifications -e visible false
+   ```
+3. 설정에서 언어 선택 → **개발 도구 → 전부 삭제 후 주입** (샘플 시드는 로케일 대응이라
+   선택한 언어로 이슈명·메모가 들어간다). 언어를 바꿀 때마다 다시 주입할 것.
+4. `adb exec-out screencap -p` 로 캡처 → `sips -Z 720` 로 리사이즈해 같은 파일명으로 덮어쓴다.
+   파일명은 문서의 `<img src>` 와 1:1 이므로 **이름을 바꾸지 말 것**.
+
+바디맵 이미지는 "한 기록에 여러 강도"를 보여주려고 허리를 7, 다리를 4로 칠한 것이다.
+처치 상세 이미지는 전후 6시간 규칙이 실제로 표시되는 사례를 골랐다. 다시 찍을 때도
+같은 의도를 유지해야 캡션과 어긋나지 않는다.
