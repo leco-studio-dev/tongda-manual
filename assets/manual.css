@@ -341,6 +341,45 @@ ol.steps b { display: block; }
   margin-bottom: 3px;
 }
 
+/* ---------- screenshots ---------- */
+
+/* .shot = one screenshot; .shots = a row of 2–3 that wraps on narrow screens.
+   Phone captures are 720px wide; they display at ~260px and stay crisp on retina. */
+
+figure.shot, .shots { margin: 22px 0; }
+
+figure.shot { max-width: 264px; }
+
+figure.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+}
+
+figure.shot figcaption {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text2);
+  margin-top: 9px;
+}
+
+.shots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shots figure.shot { margin: 0; flex: 0 1 264px; }
+
+@media (max-width: 560px) {
+  .shots { gap: 24px; }
+  figure.shot, .shots figure.shot { max-width: 100%; flex-basis: 100%; }
+  figure.shot img { max-width: 320px; }
+}
+
 /* ---------- table ---------- */
 
 .tablewrap { overflow-x: auto; margin: 18px 0; }

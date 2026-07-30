@@ -82,6 +82,16 @@
     <li><b>Choose symptom types and add a note</b>Picking sensations like "Tingling" or "Stiff" lets you see how the character of the pain changes over time.</li>
     <li><b>Save</b>It appears immediately on the home screen's recent-pain card.</li>
   </ol>
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/01_home.png" alt="Tongda home screen with recent pain card and quick record tiles" loading="lazy">
+      <figcaption><b>Home</b> — recent pain and treatment as cards, with <em>Quick Record</em> below to start straight away.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/02_issue_select.png" alt="Select Pain screen listing tracked pains with an add button" loading="lazy">
+      <figcaption><b>Select Pain</b> — pick what you are tracking, or create a new one with <em>+</em> at the bottom right.</figcaption>
+    </figure>
+  </div>
   <div class="tip">
     <span class="label">Next</span>
     <p>If you took medication or had treatment, log that too via <em>Log Treatment</em>. Effectiveness comparison in <a href="#stats">Pain Analysis</a> only works once both kinds of records exist.</p>
@@ -91,6 +101,11 @@
 <section id="pain">
   <h2>3. Logging pain</h2>
   <p>Start from <em>Log Pain</em> on the home screen or from the bottom tab bar. The screen has four parts.</p>
+
+  <figure class="shot">
+    <img src="../assets/img/en/03_record.png" alt="Log Pain screen showing date and time, body map, symptom types and save button" loading="lazy">
+    <figcaption><b>Log Pain</b> — from the top: date and time, mark where it hurts, symptom type, then the note.</figcaption>
+  </figure>
 
   <h3>Date and time</h3>
   <p>Defaults to now. If the episode was earlier, tap to change it. Time-of-day patterns in Pain Analysis are calculated from this value, so entering the time it actually hurt keeps the analysis accurate.</p>
@@ -121,6 +136,11 @@
 <section id="bodymap">
   <h2>4. Using the body map</h2>
   <p>The body map lets you paint the painful areas onto a body outline. Front and back are separate views you can switch between and record independently.</p>
+
+  <figure class="shot">
+    <img src="../assets/img/en/04_bodymap.png" alt="Body map editor with the lower back painted at intensity 7 and the leg at intensity 4" loading="lazy">
+    <figcaption><b>Edit Pain Area</b> — areas within one record can carry different intensities. Here the lower back is painted at 7 (deeper colour) and numbness running down the leg at 4 (lighter).</figcaption>
+  </figure>
 
   <h3>Three tools</h3>
   <div class="tablewrap">
@@ -175,6 +195,10 @@
     <li><b>Pick an item from the treatment categories</b>If it is missing, create it with <em>+ Add</em> — for example "Ibuprofen 400mg".</li>
     <li><b>Save</b></li>
   </ol>
+  <figure class="shot">
+    <img src="../assets/img/en/05_treatment.png" alt="Log Treatment screen with a pain selected and Ibuprofen picked from the medication category" loading="lazy">
+    <figcaption><b>Log Treatment</b> — choose the pain first, then expand a category and pick the item.</figcaption>
+  </figure>
   <div class="tip">
     <span class="label">Recommended</span>
     <p>Include the dose in the item name ("Paracetamol 500mg"). Different doses can behave differently, and the name appears verbatim in reports, which makes it easier to discuss at an appointment.</p>
@@ -186,6 +210,11 @@
   <h2>6. Browsing your records</h2>
   <h3>Records list</h3>
   <p>The <em>Records</em> tab at the bottom. Filter by <strong>All / Pain / Treatment</strong>, and use the search field to search <strong>notes and treatment names</strong>. Searching "injection" finds the injection treatments; searching a word you used in a note finds those pain records.</p>
+
+  <figure class="shot">
+    <img src="../assets/img/en/06_list.png" alt="Records list with All, Pain and Treatment tabs, a search field and chronological entries" loading="lazy">
+    <figcaption><b>Records</b> — filter by pain, split by type with the tabs, and search your notes.</figcaption>
+  </figure>
 
   <h3>Detail view</h3>
   <p>Tapping a pain opens its detail screen.</p>
@@ -200,6 +229,21 @@
 <section id="stats">
   <h2>7. Pain Analysis</h2>
   <p>The <em>Stats</em> tab at the bottom. Choose which pain to analyse and its screen opens.</p>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/07_stats_month.png" alt="Pain Analysis month view with better and worse cards and the pain calendar" loading="lazy">
+      <figcaption><b>Month</b> — better/worse summary cards and the Pain Calendar coloured by intensity.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/08_stats_trend.png" alt="Pain Trend Graph with treatment days marked and the effectiveness summary below" loading="lazy">
+      <figcaption><b>Trend graph</b> — daily average intensity with treatment days on top; scroll on for the effectiveness summary.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/09_stats_day.png" alt="Pain Analysis day view showing pain by hour and the detailed records for that day" loading="lazy">
+      <figcaption><b>Day</b> — that day's pain by hour and treatment times. Swipe left or right to change date.</figcaption>
+    </figure>
+  </div>
 
   <h3>Period</h3>
   <p>Switch between <strong>Day</strong> and <strong>Month</strong>. In Day view, swipe left and right to move between dates.</p>
@@ -241,6 +285,11 @@
     <li>Where multiple comparable cases exist, they are averaged.</li>
   </ol>
   <p>If there is no pain record within 6 hours on either side, no effect is calculated and the app reports that there is nothing to compare.</p>
+
+  <figure class="shot">
+    <img src="../assets/img/en/10_treatment_detail.png" alt="Treatment detail screen showing before intensity 3, after intensity 2, and pain went down by 1" loading="lazy">
+    <figcaption><b>Treatment Detail</b> — the rule in plain sight: it names the before record (3) and the after record (2), summarises the difference, and states that this is a logged change rather than causation.</figcaption>
+  </figure>
   <div class="warn">
     <span class="label">Limits of these numbers</span>
     <ul>
@@ -265,6 +314,16 @@
     <li><b>Choose the days</b>Every day / Weekdays / Weekends / Once. "Once" switches itself off after firing.</li>
     <li><b>Add a label (optional)</b>Something like "Morning pain check" is shown in the notification.</li>
   </ol>
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/12_notif_editor.png" alt="Add Notification sheet with type, trigger and day options" loading="lazy">
+      <figcaption><b>Add Notification</b> — choose the type (pain or treatment), the trigger (time or interval), and the days.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/13_notif_list.png" alt="Notifications list showing a 09:00 daily pain reminder with its next fire time" loading="lazy">
+      <figcaption><b>Notifications</b> — after saving, the <em>Next</em> time is shown so you can confirm the setting is right.</figcaption>
+    </figure>
+  </div>
   <p>After saving, the card shows the <strong>next fire time</strong> so you can confirm the setting is right.</p>
 
   <h3>Logging straight from a notification</h3>
@@ -349,6 +408,11 @@
   <h3>Language</h3>
   <p>Settings → Language offers <strong>System default / 한국어 / English</strong>. The app's language can differ from your device language. The change applies immediately, and this manual opens in whichever language the app is set to.</p>
   <p>Symptom and treatment items you created yourself stay in the language you typed them in. Only the items the app ships with are translated.</p>
+  <figure class="shot">
+    <img src="../assets/img/en/11_settings_info.png" alt="Settings About section with version, User Manual and Privacy Policy rows" loading="lazy">
+    <figcaption><b>Settings → About</b> — <em>User Manual</em> opens this document in the app's current language.</figcaption>
+  </figure>
+
   <h3>Text size</h3>
   <p>Settings → Text size offers <strong>Small / Default / Large / Extra Large</strong>, with a live preview. It applies throughout the app.</p>
 </section>
