@@ -237,12 +237,22 @@ main { padding: 36px 0 0; min-width: 0; }
 
 section { margin: 0 0 52px; scroll-margin-top: 84px; }
 
+/* Chapter numbers are generated, not written into the markup — inserting a
+   chapter must never mean renumbering every heading by hand. */
+main { counter-reset: chapter; }
+
 h2 {
   font-size: 22px;
   letter-spacing: -0.015em;
   margin: 0 0 6px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
+}
+
+section > h2 { counter-increment: chapter; }
+
+section > h2::before {
+  content: counter(chapter) ". ";
 }
 
 h3 {

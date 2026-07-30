@@ -30,6 +30,7 @@
     <li><a href="#pain">Logging pain</a></li>
     <li><a href="#bodymap">Using the body map</a></li>
     <li><a href="#treatment">Logging treatments</a></li>
+    <li><a href="#manage">Editing and deleting</a></li>
     <li><a href="#browse">Browsing your records</a></li>
     <li><a href="#stats">Pain Analysis</a></li>
     <li><a href="#effect">How effectiveness is calculated</a></li>
@@ -53,6 +54,7 @@
   <div class="chips">
     <a class="chip" href="#quickstart">First steps</a>
     <a class="chip" href="#bodymap">Body map</a>
+    <a class="chip" href="#manage">Fix or delete an entry</a>
     <a class="chip" href="#report">Report for your doctor</a>
     <a class="chip" href="#backup">New phone · backup</a>
     <a class="chip" href="#faq">Notifications not arriving</a>
@@ -60,7 +62,7 @@
 </div>
 
 <section id="intro">
-  <h2>1. What Tongda is for</h2>
+  <h2>What Tongda is for</h2>
   <p>Pain is hard to remember accurately. "Is it better than last month?" is difficult to answer honestly, and judgments about which medication or therapy helped end up resting on impressions. Tongda exists to close that gap.</p>
   <ul>
     <li><strong>Log Pain</strong> — record when it hurt, where, and how badly, by drawing directly on a body map.</li>
@@ -72,13 +74,13 @@
 </section>
 
 <section id="quickstart">
-  <h2>2. Get started in 3 minutes</h2>
+  <h2>Get started in 3 minutes</h2>
   <p>Every record in Tongda belongs to a <strong>pain</strong> — a named condition you want to track, such as "Lower back pain" or "Migraine". So the first step is creating one.</p>
   <ol class="steps">
     <li><b>Tap <em>Log Pain</em> on the home screen</b>It is in the quick-record area.</li>
     <li><b>On the Select Pain screen, tap <em>+</em> to add one</b>Be specific enough to recognise later — for example "Right shoulder pain" or "Knee pain (stairs)".</li>
     <li><b>Select it to open the logging screen</b>The date and time are pre-filled with the current moment; change them if the episode was earlier.</li>
-    <li><b>Tap <em>Edit</em> and mark where it hurts on the body map</b>Pick an intensity and paint with your finger. See <a href="#bodymap">chapter 4</a> for the controls.</li>
+    <li><b>Tap <em>Edit</em> and mark where it hurts on the body map</b>Pick an intensity and paint with your finger. See the <a href="#bodymap">body map chapter</a> for the controls.</li>
     <li><b>Choose symptom types and add a note</b>Picking sensations like "Tingling" or "Stiff" lets you see how the character of the pain changes over time.</li>
     <li><b>Save</b>It appears immediately on the home screen's recent-pain card.</li>
   </ol>
@@ -99,7 +101,7 @@
 </section>
 
 <section id="pain">
-  <h2>3. Logging pain</h2>
+  <h2>Logging pain</h2>
   <p>Start from <em>Log Pain</em> on the home screen or from the bottom tab bar. The screen has four parts.</p>
 
   <figure class="shot">
@@ -125,16 +127,12 @@
   <h3>Note</h3>
   <p>Use the note for context that no number captures — weather, sleep, an unusually heavy day. Notes are searchable from the <a href="#browse">Records list</a>.</p>
 
-  <h3>Editing and deleting</h3>
-  <p>Existing records can be edited or deleted from the Records list or the detail screen.</p>
-  <div class="warn">
-    <span class="label">Important</span>
-    <p>Editing or deleting a pain record <strong>also changes the treatment-effectiveness results</strong> in your statistics and reports. Effectiveness is computed by comparing pain records around each treatment, so changing one record changes how that treatment is scored. Deletion cannot be undone.</p>
-  </div>
+  <h3>Changing or removing an entry</h3>
+  <p>Editing and deleting saved records, deleting a pain, and tidying the symptom and treatment lists each work differently — they are collected in <a href="#manage">Editing and deleting</a>.</p>
 </section>
 
 <section id="bodymap">
-  <h2>4. Using the body map</h2>
+  <h2>Using the body map</h2>
   <p>The body map lets you paint the painful areas onto a body outline. Front and back are separate views you can switch between and record independently.</p>
 
   <figure class="shot">
@@ -187,7 +185,7 @@
 </section>
 
 <section id="treatment">
-  <h2>5. Logging treatments</h2>
+  <h2>Logging treatments</h2>
   <p>Start from <em>Log Treatment</em> on the home screen. A treatment is anything you did about the pain: medication, physical therapy, an injection, stretching, heat or ice.</p>
   <ol class="steps">
     <li><b>Check the date and time</b>Effectiveness compares pain before and after this moment, so use the actual time of the treatment.</li>
@@ -206,8 +204,85 @@
   <p>Tapping a treatment record opens the <strong>treatment detail</strong> screen, showing the pain before and after it, how many times you have used it for this pain, and its average effect. Editing and deleting happen here too, and — as with pain records — they change your statistics.</p>
 </section>
 
+<section id="manage">
+  <h2>Editing and deleting</h2>
+  <p>How you remove something depends on what it is. <strong>Records</strong> are deleted with a button on their detail screen; a <strong>pain</strong> and the <strong>symptom and treatment items</strong> are deleted by <strong>long-pressing</strong> them. The difference is deliberate — it makes the destructive actions hard to trigger by accident.</p>
+
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>What</th><th>Edit</th><th>Delete</th></tr></thead>
+    <tbody>
+      <tr><td>A single pain record</td><td>Detail view → ✏️ in the top bar</td><td>Detail view → 🗑 in the top bar</td></tr>
+      <tr><td>A single treatment record</td><td>Treatment detail → <em>Edit</em></td><td>Treatment detail → <em>Delete</em></td></tr>
+      <tr><td>A pain</td><td>Renaming and changing status are not supported</td><td>Select Pain → <strong>long-press</strong> → ⊖</td></tr>
+      <tr><td>Symptom / treatment items</td><td>No renaming (create a new one)</td><td><strong>Long-press</strong> the chip → ⊖</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>A single pain record</h3>
+  <ol class="steps">
+    <li><b>Open the record</b>Tap a pain record in the <em>Records</em> tab, or the <em>Recent Pain</em> card on the home screen. The detail view opens.</li>
+    <li><b>Use the icons in the top bar</b>📄 report · ✏️ edit · 🗑 delete — all three act on <strong>the record currently on screen</strong>.</li>
+    <li><b>Use ← → to move between records</b>They step to the previous or newer record of the same pain. Edit and delete then apply to <strong>whichever record you moved to</strong>, so check the date and intensity on screen before deleting.</li>
+  </ol>
+  <p><strong>Edit</strong> reopens the logging screen exactly as you saved it — date and time, body map, symptoms and note are all editable. When you tap <em>Save</em>, a <strong>warning appears once</strong>: your edit will feed into the treatment-effectiveness results in statistics and reports, so existing figures may change. You have to tap <em>Save</em> again in that dialog to apply it.</p>
+  <p><strong>Delete</strong> also asks for confirmation. Once confirmed it is gone and <strong>cannot be undone</strong>.</p>
+
+  <h3>A single treatment record</h3>
+  <p>Tap a treatment in the Records list (or the <em>Recent Treatment</em> card on the home screen) to open the treatment detail, which has <em>Edit</em> and <em>Delete</em> in the top bar. Saving an edit shows the same one-time warning as a pain record.</p>
+
+  <div class="warn">
+    <span class="label">Editing a record changes the numbers</span>
+    <p>Editing or deleting a pain or treatment record <strong>also changes the treatment-effectiveness results</strong> in your statistics and reports. Effectiveness is computed by comparing the pain records around each treatment (see <a href="#effect">how effectiveness is calculated</a>), so changing one record changes how that treatment is scored. That is why the app warns you before saving.</p>
+  </div>
+
+  <h3>Deleting a pain — long-press</h3>
+  <ol class="steps">
+    <li><b>Open the Select Pain screen</b>It is the screen you get from <em>Log Pain</em> on the home screen.</li>
+    <li><b>Long-press a pain card</b>The cards start to wiggle and a ⊖ badge appears at the top right of each one.</li>
+    <li><b>Tap ⊖ on the one you want gone</b>A confirmation dialog appears; it is only deleted once you tap <em>Delete</em> there.</li>
+    <li><b>To back out, tap any card once</b>While the cards are wiggling, the first tap <strong>exits wiggle mode instead of selecting</strong> — so you will not accidentally open the logging screen.</li>
+  </ol>
+  <div class="warn">
+    <span class="label">Warning</span>
+    <p>Deleting a pain <strong>also deletes every pain record and treatment record attached to it</strong>. This cannot be undone.</p>
+    <p>If a condition has resolved and you simply will not log it any more, <strong>leave it in place.</strong> A pain sitting in the list costs you nothing, and if the same problem returns you can read the old history alongside the new. Deleting is best reserved for entries you created by mistake.</p>
+  </div>
+
+  <h3>Tidying symptom and treatment items — long-press</h3>
+  <p>The <strong>symptom chips</strong> on the logging screen and the <strong>treatment item chips</strong> on the treatment screen work the same way.</p>
+  <ol class="steps">
+    <li><b>Long-press a chip</b>Only the chips in <strong>that chip's category</strong> start wiggling and get a ⊖ badge; other categories are untouched.</li>
+    <li><b>Tap ⊖ on the chips you want out of the list</b>This happens immediately, without a confirmation dialog. See the table below for what it does.</li>
+    <li><b>Tap <em>Done</em> next to the category title</b>The wiggling stops and tapping selects chips normally again.</li>
+  </ol>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Kind of chip</th><th>What ⊖ does</th></tr></thead>
+    <tbody>
+      <tr><td><strong>An item you added</strong> (via <em>+ Add</em>)</td><td>Removed from the list for good. You can recreate it with <em>+ Add</em>.</td></tr>
+      <tr><td><strong>A built-in item</strong></td><td>Hidden from the list. It is concealed rather than deleted.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul>
+    <li>Either way, <strong>records you already saved are untouched</strong> — only the list of choices for future records changes.</li>
+    <li>If the item was selected on the record you are writing, that selection is cleared too.</li>
+  </ul>
+  <div class="warn">
+    <span class="label">Hiding built-in items is one-way</span>
+    <p>A hidden <strong>built-in item cannot currently be brought back from inside the app</strong> — adding an item with the same name via <em>+ Add</em> will not restore it. However long the list feels, it is safer to leave the built-in items alone and add the wordings you actually use with <em>+ Add</em>.</p>
+  </div>
+
+  <div class="note">
+    <span class="label">Clearing everything and starting over</span>
+    <p>Settings → Data → <em>Reset Data</em> deletes every pain, record and treatment at once. That cannot be undone either, so check your <a href="#backup">backup</a> first.</p>
+  </div>
+</section>
+
 <section id="browse">
-  <h2>6. Browsing your records</h2>
+  <h2>Browsing your records</h2>
   <h3>Records list</h3>
   <p>The <em>Records</em> tab at the bottom. Filter by <strong>All / Pain / Treatment</strong>, and use the search field to search <strong>notes and treatment names</strong>. Searching "injection" finds the injection treatments; searching a word you used in a note finds those pain records.</p>
 
@@ -227,7 +302,7 @@
 </section>
 
 <section id="stats">
-  <h2>7. Pain Analysis</h2>
+  <h2>Pain Analysis</h2>
   <p>The <em>Stats</em> tab at the bottom. Choose which pain to analyse and its screen opens.</p>
 
   <div class="shots">
@@ -275,7 +350,7 @@
 </section>
 
 <section id="effect">
-  <h2>8. How effectiveness is calculated</h2>
+  <h2>How effectiveness is calculated</h2>
   <p>Tongda uses one simple, transparent rule. It is worth knowing so you can read the numbers correctly.</p>
   <h3>The rule</h3>
   <ol>
@@ -303,7 +378,7 @@
 </section>
 
 <section id="notif">
-  <h2>9. Notifications</h2>
+  <h2>Notifications</h2>
   <p>Open it from the notification card on the home screen or from Settings. This is where you create reminders so logging does not get forgotten.</p>
 
   <h3>Creating a reminder</h3>
@@ -345,7 +420,7 @@
 </section>
 
 <section id="widget">
-  <h2>10. Home screen widget</h2>
+  <h2>Home screen widget</h2>
   <p>A widget on your home screen shows your most recent pain and jumps straight into logging. Long-press the home screen and pick Tongda from the widget list.</p>
   <p>Once placed, you can adjust:</p>
   <ul>
@@ -355,7 +430,7 @@
 </section>
 
 <section id="report">
-  <h2>11. Exporting a report</h2>
+  <h2>Exporting a report</h2>
   <p>This produces a document to bring to an appointment. Go to Settings → Report → <em>Export Report</em>, or start from a pain's detail screen. Pick the pain, choose where to save, and the report is written as a <strong>PDF file</strong>.</p>
 
   <h3>What the report contains</h3>
@@ -368,7 +443,7 @@
       <tr><td>Key figures</td><td>Average intensity, last 7 days, peak intensity, trend against the start, most frequent time of day</td></tr>
       <tr><td>Pain trend</td><td>Daily average intensity chart with treatment days marked</td></tr>
       <tr><td>Accompanying symptoms</td><td>Most frequently logged symptom types</td></tr>
-      <tr><td>Treatment Response</td><td>Uses and before/after change per treatment (method in <a href="#effect">chapter 8</a>)</td></tr>
+      <tr><td>Treatment Response</td><td>Uses and before/after change per treatment (method in <a href="#effect">how effectiveness is calculated</a>)</td></tr>
       <tr><td>Timeline · Appendix</td><td>Every pain and treatment record in the period, in chronological order</td></tr>
     </tbody>
   </table>
@@ -382,7 +457,7 @@
 </section>
 
 <section id="backup">
-  <h2>12. Backup and restore</h2>
+  <h2>Backup and restore</h2>
   <p>Because records live only on your device, <strong>always export a backup before changing phones or uninstalling the app</strong>. Go to Settings → Data.</p>
 
   <h3>Export Data</h3>
@@ -404,7 +479,7 @@
 </section>
 
 <section id="settings">
-  <h2>13. Language and text size</h2>
+  <h2>Language and text size</h2>
   <h3>Language</h3>
   <p>Settings → Language offers <strong>System default / 한국어 / English</strong>. The app's language can differ from your device language. The change applies immediately, and this manual opens in whichever language the app is set to.</p>
   <p>Symptom and treatment items you created yourself stay in the language you typed them in. Only the items the app ships with are translated.</p>
@@ -418,7 +493,7 @@
 </section>
 
 <section id="premium">
-  <h2>14. Free limits and Premium</h2>
+  <h2>Free limits and Premium</h2>
   <p>Tongda is free to use, with ads and a few limits. Premium is a <strong>one-time purchase that lasts forever</strong> — not a subscription.</p>
   <div class="tablewrap">
   <table>
@@ -442,7 +517,7 @@
 </section>
 
 <section id="privacy">
-  <h2>15. Where your data lives</h2>
+  <h2>Where your data lives</h2>
   <ul>
     <li><strong>Records are stored on your device.</strong> There is no account or sign-in, and pain and treatment records are not uploaded to a server.</li>
     <li><strong>Backup files are yours to manage.</strong> You decide where the exported <code>.tngd</code> file is kept.</li>
@@ -453,7 +528,7 @@
 </section>
 
 <section id="faq">
-  <h2>16. Frequently asked questions</h2>
+  <h2>Frequently asked questions</h2>
 
   <details>
     <summary>My reminders never arrive.</summary>
@@ -478,8 +553,20 @@
   </details>
 
   <details>
+    <summary>I named a pain badly. Can I rename it?</summary>
+    <p><strong>Renaming is not currently supported</strong>, and neither is changing the status (active / chronic / resolved) — a pain you create always starts as "active".</p>
+    <p>If it holds almost no records yet, it is quicker to <a href="#manage">long-press and delete it</a> and create it again under the right name. If records have already accumulated, leave the name as it is: deleting takes every record and treatment attached to that pain with it, which is a far worse loss than an awkward name.</p>
+  </details>
+
+  <details>
+    <summary>I hid a built-in symptom (or treatment) item by mistake.</summary>
+    <p>Unfortunately it <strong>cannot be restored from inside the app</strong> — adding an item with the same name via <em>+ Add</em> does not lift the hiding. The only workaround today is to add your own item with a <strong>slightly different name</strong> (for example "Aching" → "Ache").</p>
+    <p>Records that already contain the item are unaffected, so your statistics and reports stay intact.</p>
+  </details>
+
+  <details>
     <summary>My statistics say there is not enough data.</summary>
-    <p>Trends and effectiveness need a minimum number of records. Effectiveness in particular requires a <strong>pain record within 6 hours before and after the treatment</strong> (<a href="#effect">chapter 8</a>). Logging pain just before a treatment and again a few hours later fills this in quickly. Once three or more comparable cases exist, the low-confidence notice disappears.</p>
+    <p>Trends and effectiveness need a minimum number of records. Effectiveness in particular requires a <strong>pain record within 6 hours before and after the treatment</strong> (<a href="#effect">how effectiveness is calculated</a>). Logging pain just before a treatment and again a few hours later fills this in quickly. Once three or more comparable cases exist, the low-confidence notice disappears.</p>
   </details>
 
   <details>
@@ -504,7 +591,7 @@
 </section>
 
 <section id="disclaimer">
-  <h2>17. Medical notice</h2>
+  <h2>Medical notice</h2>
   <div class="warn">
     <p>Tongda is a <strong>record-keeping tool</strong>, not a medical device. It is not intended to diagnose, treat, or prevent any disease.</p>
     <p>The trends and treatment effects it shows are <strong>indicative figures</strong> computed from what you entered. They do not establish statistical significance or medical causation. Do not make any treatment decision — including starting, stopping, or changing a medication — on the basis of these numbers alone. Consult your doctor or pharmacist.</p>
