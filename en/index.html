@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tongda User Manual</title>
+<meta name="description" content="Tongda — user manual for the chronic pain diary app. How to log pain, use the body map, read treatment effectiveness, export reports, and back up your data.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../assets/manual.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><span class="brand-mark">T</span>Tongda <small>User Manual</small></a>
+    <div class="langswitch">
+      <a href="../ko/">한국어</a>
+      <a href="../en/" aria-current="true">English</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<nav class="toc" aria-label="Contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#intro">What Tongda is for</a></li>
+    <li><a href="#quickstart">Get started in 3 minutes</a></li>
+    <li><a href="#pain">Logging pain</a></li>
+    <li><a href="#bodymap">Using the body map</a></li>
+    <li><a href="#treatment">Logging treatments</a></li>
+    <li><a href="#browse">Browsing your records</a></li>
+    <li><a href="#stats">Pain Analysis</a></li>
+    <li><a href="#effect">How effectiveness is calculated</a></li>
+    <li><a href="#notif">Notifications</a></li>
+    <li><a href="#widget">Home screen widget</a></li>
+    <li><a href="#report">Exporting a report</a></li>
+    <li><a href="#backup">Backup and restore</a></li>
+    <li><a href="#settings">Language and text size</a></li>
+    <li><a href="#premium">Free limits and Premium</a></li>
+    <li><a href="#privacy">Where your data lives</a></li>
+    <li><a href="#faq">Frequently asked questions</a></li>
+    <li><a href="#disclaimer">Medical notice</a></li>
+  </ol>
+</nav>
+
+<main>
+
+<div class="hero">
+  <h1>Tongda User Manual</h1>
+  <p>Tongda is a pain diary for tracking chronic pain and finding out — from your own records — which treatments actually helped. This manual walks through every feature in the order you meet it in the app.</p>
+  <div class="chips">
+    <a class="chip" href="#quickstart">First steps</a>
+    <a class="chip" href="#bodymap">Body map</a>
+    <a class="chip" href="#report">Report for your doctor</a>
+    <a class="chip" href="#backup">New phone · backup</a>
+    <a class="chip" href="#faq">Notifications not arriving</a>
+  </div>
+</div>
+
+<section id="intro">
+  <h2>1. What Tongda is for</h2>
+  <p>Pain is hard to remember accurately. "Is it better than last month?" is difficult to answer honestly, and judgments about which medication or therapy helped end up resting on impressions. Tongda exists to close that gap.</p>
+  <ul>
+    <li><strong>Log Pain</strong> — record when it hurt, where, and how badly, by drawing directly on a body map.</li>
+    <li><strong>Log Treatment</strong> — record what you did about it: medication, physical therapy, injections, exercise, heat or ice.</li>
+    <li><strong>Analyse</strong> — see time-of-day patterns, pain trends, and a ranking of your treatments by effect.</li>
+    <li><strong>Report</strong> — export a summary document as a PDF to bring to an appointment.</li>
+  </ul>
+  <p>Records are stored <strong>on your device</strong>. There is no account and no sign-in.</p>
+</section>
+
+<section id="quickstart">
+  <h2>2. Get started in 3 minutes</h2>
+  <p>Every record in Tongda belongs to a <strong>pain</strong> — a named condition you want to track, such as "Lower back pain" or "Migraine". So the first step is creating one.</p>
+  <ol class="steps">
+    <li><b>Tap <em>Log Pain</em> on the home screen</b>It is in the quick-record area.</li>
+    <li><b>On the Select Pain screen, tap <em>+</em> to add one</b>Be specific enough to recognise later — for example "Right shoulder pain" or "Knee pain (stairs)".</li>
+    <li><b>Select it to open the logging screen</b>The date and time are pre-filled with the current moment; change them if the episode was earlier.</li>
+    <li><b>Tap <em>Edit</em> and mark where it hurts on the body map</b>Pick an intensity and paint with your finger. See <a href="#bodymap">chapter 4</a> for the controls.</li>
+    <li><b>Choose symptom types and add a note</b>Picking sensations like "Tingling" or "Stiff" lets you see how the character of the pain changes over time.</li>
+    <li><b>Save</b>It appears immediately on the home screen's recent-pain card.</li>
+  </ol>
+  <div class="tip">
+    <span class="label">Next</span>
+    <p>If you took medication or had treatment, log that too via <em>Log Treatment</em>. Effectiveness comparison in <a href="#stats">Pain Analysis</a> only works once both kinds of records exist.</p>
+  </div>
+</section>
+
+<section id="pain">
+  <h2>3. Logging pain</h2>
+  <p>Start from <em>Log Pain</em> on the home screen or from the bottom tab bar. The screen has four parts.</p>
+
+  <h3>Date and time</h3>
+  <p>Defaults to now. If the episode was earlier, tap to change it. Time-of-day patterns in Pain Analysis are calculated from this value, so entering the time it actually hurt keeps the analysis accurate.</p>
+
+  <h3>Mark where it hurts</h3>
+  <p>Tap <em>Edit</em> to open the body map editor. You can save without drawing, but drawing enables the area comparison and spread-over-time views in the report. Controls are in <a href="#bodymap">the next chapter</a>.</p>
+
+  <h3>Symptom type</h3>
+  <p>Pick as many sensations as apply, grouped by category.</p>
+  <ul>
+    <li><strong>Nerve sensations</strong> — Tingling, Like an electric shock, Burning, Numb, and others</li>
+    <li><strong>Muscle, bone &amp; joint</strong> — Stiff, Aching, Stabbing, Pulling, Tight, and others</li>
+    <li>Further categories can be expanded in the list.</li>
+  </ul>
+  <p>If a sensation is missing, create it with <em>+ Add</em> inside the category. Items you create are kept and offered in later records.</p>
+
+  <h3>Note</h3>
+  <p>Use the note for context that no number captures — weather, sleep, an unusually heavy day. Notes are searchable from the <a href="#browse">Records list</a>.</p>
+
+  <h3>Editing and deleting</h3>
+  <p>Existing records can be edited or deleted from the Records list or the detail screen.</p>
+  <div class="warn">
+    <span class="label">Important</span>
+    <p>Editing or deleting a pain record <strong>also changes the treatment-effectiveness results</strong> in your statistics and reports. Effectiveness is computed by comparing pain records around each treatment, so changing one record changes how that treatment is scored. Deletion cannot be undone.</p>
+  </div>
+</section>
+
+<section id="bodymap">
+  <h2>4. Using the body map</h2>
+  <p>The body map lets you paint the painful areas onto a body outline. Front and back are separate views you can switch between and record independently.</p>
+
+  <h3>Three tools</h3>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Tool</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td>🖌 Brush</td><td>Paints an area at the selected intensity. Draw with one finger.</td></tr>
+      <tr><td>🩹 Eraser</td><td>Touch an area to erase it.</td></tr>
+      <tr><td>⚡ Adjust</td><td>Tap a painted area and <strong>everything painted at that same intensity is selected together</strong>; +/− then changes only the intensity. Use it to correct the level without redrawing.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Pain intensity</h3>
+  <p>Intensity runs from 1 to 10, and the colour deepens as the number rises. The app uses one colour rule everywhere, so the shade you paint on the body map matches the intensity colour shown in lists and statistics.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Intensity</th><th>Wording in the app</th></tr></thead>
+    <tbody>
+      <tr><td>1–2</td><td>Barely there</td></tr>
+      <tr><td>3–4</td><td>Mild</td></tr>
+      <tr><td>5–6</td><td>Moderate</td></tr>
+      <tr><td>7–8</td><td>Quite bad</td></tr>
+      <tr><td>9–10</td><td>Excruciating</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Different areas in the same record can carry different intensities — for example 8 across the lower back and 4 for numbness running down the leg.</p>
+
+  <h3>Brush size</h3>
+  <p>Adjustable from 8 (fine) to 24 (thick). Pinch to zoom in, then paint fine to mark a small area such as a joint precisely.</p>
+
+  <h3>Touch controls</h3>
+  <ul>
+    <li><strong>One finger</strong> — draw (or erase)</li>
+    <li><strong>Two fingers</strong> — zoom and pan</li>
+    <li><strong>Undo</strong> — cancels the last stroke</li>
+    <li><strong>Clear all</strong> — clears the current side</li>
+  </ul>
+  <div class="note">
+    <span class="label">Note</span>
+    <p>The "spread" figure in reports is approximated from the length of your strokes and the brush width — it is not a measured surface area. Keeping the brush size roughly consistent for the same condition makes period-to-period comparison more meaningful.</p>
+  </div>
+</section>
+
+<section id="treatment">
+  <h2>5. Logging treatments</h2>
+  <p>Start from <em>Log Treatment</em> on the home screen. A treatment is anything you did about the pain: medication, physical therapy, an injection, stretching, heat or ice.</p>
+  <ol class="steps">
+    <li><b>Check the date and time</b>Effectiveness compares pain before and after this moment, so use the actual time of the treatment.</li>
+    <li><b>Select the pain</b>Every treatment is attached to one pain. The record will not save until you choose which one.</li>
+    <li><b>Pick an item from the treatment categories</b>If it is missing, create it with <em>+ Add</em> — for example "Ibuprofen 400mg".</li>
+    <li><b>Save</b></li>
+  </ol>
+  <div class="tip">
+    <span class="label">Recommended</span>
+    <p>Include the dose in the item name ("Paracetamol 500mg"). Different doses can behave differently, and the name appears verbatim in reports, which makes it easier to discuss at an appointment.</p>
+  </div>
+  <p>Tapping a treatment record opens the <strong>treatment detail</strong> screen, showing the pain before and after it, how many times you have used it for this pain, and its average effect. Editing and deleting happen here too, and — as with pain records — they change your statistics.</p>
+</section>
+
+<section id="browse">
+  <h2>6. Browsing your records</h2>
+  <h3>Records list</h3>
+  <p>The <em>Records</em> tab at the bottom. Filter by <strong>All / Pain / Treatment</strong>, and use the search field to search <strong>notes and treatment names</strong>. Searching "injection" finds the injection treatments; searching a word you used in a note finds those pain records.</p>
+
+  <h3>Detail view</h3>
+  <p>Tapping a pain opens its detail screen.</p>
+  <ul>
+    <li><strong>Pain records tab</strong> — intensity, pain character, body map and note for each entry</li>
+    <li><strong>Treatment records tab</strong> — the treatments attached to this pain</li>
+    <li><strong>Last treatment</strong> — for each pain record, the most recent treatment before it and how long before (within 1 hour / N hours ago / N days ago)</li>
+  </ul>
+  <p>The detail screen is for per-entry history; aggregated figures and charts live in <a href="#stats">Pain Analysis</a>.</p>
+</section>
+
+<section id="stats">
+  <h2>7. Pain Analysis</h2>
+  <p>The <em>Stats</em> tab at the bottom. Choose which pain to analyse and its screen opens.</p>
+
+  <h3>Period</h3>
+  <p>Switch between <strong>Day</strong> and <strong>Month</strong>. In Day view, swipe left and right to move between dates.</p>
+
+  <h3>Pain by Hour</h3>
+  <p>Compares average intensity across morning, afternoon, evening and night. If pain clusters in one window, that is a concrete basis for adjusting routines or dosing times.</p>
+
+  <h3>Pain Calendar</h3>
+  <p>A month grid coloured by intensity. Days without records stay empty. Tap a day to see its records below.</p>
+
+  <h3>Pain Trend Graph</h3>
+  <p>Daily average intensity as a line, with the days you had treatment marked on top. Choose <strong>30 days / All / Custom range</strong>. Where the line falls in a stretch dense with treatment markers, that period is worth a closer look.</p>
+
+  <h3>This month's insights</h3>
+  <p>Plain-language summaries of your records — for example "Pain has been easing off recently" or "Average pain fell from 6.4 to 4.1 after treatment". When there is too little data, the app says so instead of asserting a trend.</p>
+
+  <h3>Treatment effectiveness</h3>
+  <ul>
+    <li><strong>Most Effective Treatment</strong> — with use count, average before, and average after.</li>
+    <li><strong>Top 3 Most-Used Treatments</strong> — by count, which can differ from the effectiveness ranking.</li>
+    <li><strong>Overall Treatment Effectiveness</strong> — ranked by effect score.</li>
+  </ul>
+  <p>When the most-used treatment is not the most effective one, the app points that out. It means the treatment you reach for by habit may not be the one that works best for you.</p>
+  <div class="note">
+    <span class="label">What the effect score is</span>
+    <p>The reduction in pain after a treatment, <strong>divided among the treatments logged at the same time</strong>, accumulated across uses. If you took medication and applied heat together, they split that reduction. Treatments that were used often and consistently helped rise to the top.</p>
+  </div>
+  <p>On the free tier, statistics cover the <strong>last 30 days</strong>; earlier periods unlock with Premium.</p>
+</section>
+
+<section id="effect">
+  <h2>8. How effectiveness is calculated</h2>
+  <p>Tongda uses one simple, transparent rule. It is worth knowing so you can read the numbers correctly.</p>
+  <h3>The rule</h3>
+  <ol>
+    <li>Around each treatment, the pain record <strong>within the 6 hours before</strong> counts as "before" and the one <strong>within the 6 hours after</strong> counts as "after".</li>
+    <li>The difference between those two intensities is that treatment's change.</li>
+    <li>If several treatments were logged at the same time, the change is divided among them.</li>
+    <li>Where multiple comparable cases exist, they are averaged.</li>
+  </ol>
+  <p>If there is no pain record within 6 hours on either side, no effect is calculated and the app reports that there is nothing to compare.</p>
+  <div class="warn">
+    <span class="label">Limits of these numbers</span>
+    <ul>
+      <li><strong>This is not causation.</strong> It is a change in your records; it cannot separate natural improvement from the effect of the treatment.</li>
+      <li><strong>Samples are small.</strong> Below three comparable cases the app marks the result as indicative only.</li>
+      <li><strong>It reflects your logging habits.</strong> If you log when it hurts but not when it eases, effectiveness will look lower than it was.</li>
+      <li>It is not a test of statistical significance and should not be used on its own to make treatment decisions.</li>
+    </ul>
+  </div>
+  <p>The way to make it accurate is simple: <strong>log your pain just before a treatment and again a few hours later</strong>. With those two points, the comparison works.</p>
+</section>
+
+<section id="notif">
+  <h2>9. Notifications</h2>
+  <p>Open it from the notification card on the home screen or from Settings. This is where you create reminders so logging does not get forgotten.</p>
+
+  <h3>Creating a reminder</h3>
+  <ol class="steps">
+    <li><b>Tap + at the bottom right</b></li>
+    <li><b>Choose the kind</b><em>Pain</em> or <em>Treatment</em> — this changes the wording and the quick-log action.</li>
+    <li><b>Choose the trigger</b><em>Time</em> fires at a set clock time; <em>Interval</em> repeats every 15 / 30 minutes, 1 / 2 / 4 hours, or a custom number of minutes.</li>
+    <li><b>Choose the days</b>Every day / Weekdays / Weekends / Once. "Once" switches itself off after firing.</li>
+    <li><b>Add a label (optional)</b>Something like "Morning pain check" is shown in the notification.</li>
+  </ol>
+  <p>After saving, the card shows the <strong>next fire time</strong> so you can confirm the setting is right.</p>
+
+  <h3>Logging straight from a notification</h3>
+  <p>Each notification carries two actions.</p>
+  <ul>
+    <li><strong>Quick log</strong> — saves <strong>a copy of your last record</strong> without opening the app: the last intensity for pain, or the last treatment you logged. If there is no previous record, nothing is saved.</li>
+    <li><strong>Full log</strong> — opens the logging screen in the app.</li>
+  </ul>
+
+  <h3>Permissions</h3>
+  <ul>
+    <li><strong>Notification permission</strong> — required for reminders to appear. You can grant it from the banner at the top of the screen.</li>
+    <li><strong>Exact alarm permission (optional)</strong> — when granted, reminders fire at the exact time. Without it they may arrive slightly late depending on the device.</li>
+  </ul>
+  <div class="tip">
+    <span class="label">If reminders do not arrive</span>
+    <p>Battery optimisation is the usual cause. Go to system Settings → Apps → Tongda → Battery and set it to <strong>Unrestricted</strong>. See the <a href="#faq">FAQ</a> for the full checklist.</p>
+  </div>
+</section>
+
+<section id="widget">
+  <h2>10. Home screen widget</h2>
+  <p>A widget on your home screen shows your most recent pain and jumps straight into logging. Long-press the home screen and pick Tongda from the widget list.</p>
+  <p>Once placed, you can adjust:</p>
+  <ul>
+    <li><strong>Background</strong> colour and <strong>opacity</strong> — from fully transparent to opaque</li>
+    <li><strong>Appearance</strong> — Auto / Light / Dark</li>
+  </ul>
+</section>
+
+<section id="report">
+  <h2>11. Exporting a report</h2>
+  <p>This produces a document to bring to an appointment. Go to Settings → Report → <em>Export Report</em>, or start from a pain's detail screen. Pick the pain, then the format (<strong>HTML file</strong> or <strong>Save as PDF</strong>) and where to save it.</p>
+
+  <h3>What the report contains</h3>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Section</th><th>Contents</th></tr></thead>
+    <tbody>
+      <tr><td>Summary</td><td>Status, period covered, number of records, average / highest / lowest intensity, treatment count</td></tr>
+      <tr><td>Pain Area Comparison</td><td>A cumulative body map for the whole period plus key moments (first, widest, highest, most recent)</td></tr>
+      <tr><td>Key figures</td><td>Average intensity, last 7 days, peak intensity, trend against the start, most frequent time of day</td></tr>
+      <tr><td>Pain trend</td><td>Daily average intensity chart with treatment days marked</td></tr>
+      <tr><td>Accompanying symptoms</td><td>Most frequently logged symptom types</td></tr>
+      <tr><td>Treatment Response</td><td>Uses and before/after change per treatment (method in <a href="#effect">chapter 8</a>)</td></tr>
+      <tr><td>Timeline · Appendix</td><td>Every pain and treatment record in the period, in chronological order</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="tip">
+    <span class="label">Getting the most from an appointment</span>
+    <p>Appointments are short. Print the report or have the PDF open, and lead with two sections: <strong>Summary</strong> and <strong>Treatment Response</strong>. Bring up the rest only if questions come up.</p>
+  </div>
+  <p>An HTML export can also be turned into a PDF by opening it in a browser and using <strong>Print → Save as PDF</strong>. The report is a single self-contained file, so it opens without an internet connection.</p>
+  <p>On the free tier, exporting may show a short rewarded ad. If the ad fails to load, the export proceeds anyway — an ad will never stand between you and your own data.</p>
+</section>
+
+<section id="backup">
+  <h2>12. Backup and restore</h2>
+  <p>Because records live only on your device, <strong>always export a backup before changing phones or uninstalling the app</strong>. Go to Settings → Data.</p>
+
+  <h3>Export Data</h3>
+  <p>This produces a single backup file with a <code>.tngd</code> extension. You choose where it goes, and you can keep it in a cloud drive or email it to yourself. The contents are encrypted, so it cannot be read in a text editor. No password is requested.</p>
+
+  <h3>Import Data</h3>
+  <p>When you pick a backup file, the app asks how to apply it.</p>
+  <ul>
+    <li><strong>Replace all</strong> — deletes every existing pain, record and treatment and replaces them with the file's contents. Use this when moving to a new device.</li>
+    <li><strong>Merge</strong> — keeps existing data and adds the file's contents. Use this to combine records from two devices.</li>
+  </ul>
+  <div class="warn">
+    <span class="label">Important</span>
+    <p><strong>Replace all cannot be undone.</strong> If the current device holds records you want to keep, export a backup first, then import. The maximum size of a backup file that can be imported is 10 MB.</p>
+  </div>
+
+  <h3>Reset Data</h3>
+  <p><em>Reset Data</em> in Settings deletes all pains, records and treatments. It cannot be undone — confirm you have a backup first.</p>
+</section>
+
+<section id="settings">
+  <h2>13. Language and text size</h2>
+  <h3>Language</h3>
+  <p>Settings → Language offers <strong>System default / 한국어 / English</strong>. The app's language can differ from your device language. The change applies immediately, and this manual opens in whichever language the app is set to.</p>
+  <p>Symptom and treatment items you created yourself stay in the language you typed them in. Only the items the app ships with are translated.</p>
+  <h3>Text size</h3>
+  <p>Settings → Text size offers <strong>Small / Default / Large / Extra Large</strong>, with a live preview. It applies throughout the app.</p>
+</section>
+
+<section id="premium">
+  <h2>14. Free limits and Premium</h2>
+  <p>Tongda is free to use, with ads and a few limits. Premium is a <strong>one-time purchase that lasts forever</strong> — not a subscription.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th></th><th>Free</th><th>Premium</th></tr></thead>
+    <tbody>
+      <tr><td>Pain records per day</td><td>Up to 3</td><td>Unlimited</td></tr>
+      <tr><td>Treatment records per day</td><td>Up to 3</td><td>Unlimited</td></tr>
+      <tr><td>Pains tracked</td><td>2 (one ad per additional pain)</td><td>Unlimited</td></tr>
+      <tr><td>Statistics history</td><td>Last 30 days</td><td>Entire history</td></tr>
+      <tr><td>Ads</td><td>Yes</td><td>None</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>When you reach a daily limit, you are offered a choice: watch <strong>one short ad</strong> and that kind of record becomes unlimited for the rest of the day. Pain and treatment are counted separately, so an ad watched for pain does not lift the treatment limit. Limits reset at midnight.</p>
+  <h3>Purchase and restore</h3>
+  <p>Buy from Settings → Premium. After changing devices or reinstalling, sign in with the <strong>same Google account</strong> and tap <em>Restore purchase</em>. If a payment is still processing, Premium activates automatically once it completes.</p>
+  <div class="note">
+    <span class="label">Your records are never removed</span>
+    <p>Free limits only affect how fast you can add new records. Nothing already saved is deleted or locked. The statistics window limits only what you can view — the data remains, and buying Premium opens the earlier periods exactly as they were recorded.</p>
+  </div>
+</section>
+
+<section id="privacy">
+  <h2>15. Where your data lives</h2>
+  <ul>
+    <li><strong>Records are stored on your device.</strong> There is no account or sign-in, and pain and treatment records are not uploaded to a server.</li>
+    <li><strong>Backup files are yours to manage.</strong> You decide where the exported <code>.tngd</code> file is kept.</li>
+    <li><strong>The weather card on the home screen</strong> checks your approximate location (city-level accuracy) to fetch conditions from an external weather service. It is for display only and is not stored in your pain records. The rest of the app works normally if you decline the location permission.</li>
+    <li><strong>Ads</strong> are shown on the free tier, and the ad provider's own policies apply to them.</li>
+  </ul>
+  <p>Full details are in the <a href="https://choi32013.github.io/tongda-privacy/">privacy policy</a>, also reachable in the app via Settings → App info → Privacy policy.</p>
+</section>
+
+<section id="faq">
+  <h2>16. Frequently asked questions</h2>
+
+  <details>
+    <summary>My reminders never arrive.</summary>
+    <p>Work through these in order.</p>
+    <ol>
+      <li>Check whether the permission banner is still showing at the top of the Notifications screen — if so, tap it and grant permission.</li>
+      <li>System Settings → Apps → Tongda → Notifications must be enabled.</li>
+      <li>System Settings → Apps → Tongda → Battery, set to <strong>Unrestricted</strong>. Power-saving features on Samsung, Xiaomi, Huawei and others frequently delay or block reminders.</li>
+      <li>If reminders drift a little late, grant the <em>exact alarm permission</em> from the Notifications screen.</li>
+      <li>If the reminder's day setting is "Once", it switches itself off after firing.</li>
+    </ol>
+  </details>
+
+  <details>
+    <summary>I am changing phones. How do I move my records?</summary>
+    <p>On the old device, Settings → Data → <em>Export Data</em> to create a <code>.tngd</code> file, and move it via cloud storage or email. On the new device, use <em>Import Data</em> and choose <strong>Replace all</strong>. For Premium, sign in with the same Google account and tap <em>Restore purchase</em>.</p>
+  </details>
+
+  <details>
+    <summary>I deleted a record by mistake. Can I undo it?</summary>
+    <p>There is no undo inside the app. If you have an earlier backup file, you can import it to restore. Exporting a backup regularly is the safeguard.</p>
+  </details>
+
+  <details>
+    <summary>My statistics say there is not enough data.</summary>
+    <p>Trends and effectiveness need a minimum number of records. Effectiveness in particular requires a <strong>pain record within 6 hours before and after the treatment</strong> (<a href="#effect">chapter 8</a>). Logging pain just before a treatment and again a few hours later fills this in quickly. Once three or more comparable cases exist, the low-confidence notice disappears.</p>
+  </details>
+
+  <details>
+    <summary>The PDF will not open.</summary>
+    <p>That message appears when the device has no app able to open PDFs. Install a PDF viewer, or export the report as an <strong>HTML file</strong>, open it in a browser and use Print → Save as PDF.</p>
+  </details>
+
+  <details>
+    <summary>Several places hurt at once. How should I log that?</summary>
+    <p>If they are part of the same condition you are tracking, paint each area at its own intensity on the body map. If they are genuinely separate problems (lower back pain and migraine, say), create a separate pain for each — analysis and reports are produced per pain.</p>
+  </details>
+
+  <details>
+    <summary>Can I enter records later, in a batch?</summary>
+    <p>Yes. Set the date and time to when the pain actually occurred. Bear in mind that time-of-day patterns and effectiveness are calculated from that value, so times recalled from memory reduce the accuracy of the analysis.</p>
+  </details>
+
+  <details>
+    <summary>Can I remove symptom or treatment items I created?</summary>
+    <p>You can switch off items you no longer use in the item list. Past records already saved with that item are kept as they are.</p>
+  </details>
+</section>
+
+<section id="disclaimer">
+  <h2>17. Medical notice</h2>
+  <div class="warn">
+    <p>Tongda is a <strong>record-keeping tool</strong>, not a medical device. It is not intended to diagnose, treat, or prevent any disease.</p>
+    <p>The trends and treatment effects it shows are <strong>indicative figures</strong> computed from what you entered. They do not establish statistical significance or medical causation. Do not make any treatment decision — including starting, stopping, or changing a medication — on the basis of these numbers alone. Consult your doctor or pharmacist.</p>
+    <p>For pain that is sudden and severe, unlike anything you have had before, or accompanied by weakness, fever, or reduced consciousness, <strong>seek medical care immediately</strong> rather than logging it.</p>
+  </div>
+  <p>For questions or suggestions, please get in touch through the Tongda page on Google Play.</p>
+</section>
+
+</main>
+</div>
+
+<footer>
+  <span>Tongda — Pain Diary</span>
+  <a href="../ko/">한국어 설명서</a>
+  <a href="https://choi32013.github.io/tongda-privacy/">Privacy policy</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tongda User Manual · 통다 사용 설명서</title>
+<meta name="description" content="User manual for Tongda, the chronic pain diary app. Available in Korean and English.">
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" hreflang="ko" href="./ko/">
+<link rel="alternate" hreflang="en" href="./en/">
+<link rel="alternate" hreflang="x-default" href="./en/">
+<link rel="stylesheet" href="./assets/manual.css">
+<script>
+  // Send visitors to their language. The app links straight to /ko/ or /en/,
+  // so this only handles people who land on the root (search, shared link).
+  (function () {
+    try {
+      var lang = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+      location.replace(/^ko\b/i.test(lang) ? "./ko/" : "./en/");
+    } catch (e) {
+      /* fall through to the picker below */
+    }
+  })();
+</script>
+</head>
+<body>
+
+<div class="wrap" style="grid-template-columns: minmax(0, 1fr); padding-top: 60px;">
+  <main>
+    <div class="hero">
+      <h1>통다 사용 설명서<br>Tongda User Manual</h1>
+      <p>만성 통증 다이어리 앱 통다의 사용 설명서입니다. 언어를 선택하세요.<br>
+         User manual for Tongda, the chronic pain diary app. Choose a language.</p>
+      <div class="chips">
+        <a class="chip" href="./ko/">한국어 설명서 →</a>
+        <a class="chip" href="./en/">English manual →</a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <span>Tongda — Pain Diary · 통다</span>
+  <a href="https://choi32013.github.io/tongda-privacy/">Privacy policy · 개인정보처리방침</a>
+</footer>
+
+</body>
+</html>
