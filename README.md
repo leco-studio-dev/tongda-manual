@@ -37,6 +37,7 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 | 강도 색상 공식 (1~10) | `ui/common/IntensityBadge.kt` |
 | 백업 `.tngd` 형식 · 10MB 한도 | `data/backup/BackupRepository.kt` |
 | 리포트 구성 항목 | `data/backup/HtmlReportRepository.kt` |
+| 리포트는 **PDF 저장만** 가능 | UI 런처가 `CreateDocument("application/pdf")` 하나뿐 (`ui/settings/SettingsScreen.kt`, `ui/detail/DetailScreen.kt`). ViewModel 의 `exportReportToUri`(HTML 쓰기)와 `report_format_*` 문자열은 호출되지 않는 잔재이므로, 이 죽은 경로를 살리기 전까지 문서에 HTML 저장을 쓰지 말 것 |
 | 화면 용어 (한/영) | `res/values/strings.xml`, `res/values-en/strings.xml` |
 
 ## 스크린샷
