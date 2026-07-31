@@ -220,16 +220,19 @@
   </table>
   </div>
 
-  <div class="shots">
-    <figure class="shot">
-      <img src="../assets/img/ko/14_issue_wiggle.png" alt="통증 선택 화면이 흔들림 상태 — 카드마다 빨간 ✕ 배지, 상단 오른쪽에 완료" loading="lazy">
-      <figcaption><b>통증을 길게 누른 상태</b> — 카드마다 <strong>✕</strong> 가 붙고 상단에 <em>완료</em> 가 나타납니다.</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="../assets/img/ko/16_chip_wiggle.png" alt="처치 기록 화면 — 약물 카테고리 칩에만 ⊖ 배지, 제목 옆에 완료" loading="lazy">
-      <figcaption><b>칩을 길게 누른 상태</b> — 칩은 <strong>⊖</strong> 이고, <strong>길게 누른 칩이 속한 카테고리만</strong> 흔들립니다(아래 물리치료·운동·음식은 그대로).</figcaption>
-    </figure>
+  <h3>길게 누르기가 작동하는 세 곳</h3>
+  <p>목록에서 항목을 빼는 곳은 모두 <strong>길게 누르기</strong>로 통일되어 있습니다. 눌러야 할 곳과 배지 모양만 다릅니다.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>화면</th><th>길게 누르는 대상</th><th>배지</th><th>흔들리는 범위</th><th>끝내기</th></tr></thead>
+    <tbody>
+      <tr><td><strong>통증 선택</strong></td><td>통증 카드</td><td>✕</td><td>모든 카드</td><td>상단 <em>완료</em></td></tr>
+      <tr><td><strong>통증 기록</strong></td><td>증상 유형 칩</td><td>⊖</td><td>그 칩의 카테고리만</td><td>카테고리 옆 <em>완료</em></td></tr>
+      <tr><td><strong>처치 기록</strong></td><td>처치 항목 칩</td><td>⊖</td><td>그 칩의 카테고리만</td><td>카테고리 옆 <em>완료</em></td></tr>
+    </tbody>
+  </table>
   </div>
+  <p>통증 카드만 <strong>확인 창을 거칩니다</strong>. 칩은 ⊖ 를 누르는 즉시 목록에서 빠집니다(과거 기록은 그대로 유지되므로 되돌릴 필요가 크지 않기 때문입니다).</p>
 
   <h3>통증 기록 1건 고치기·지우기</h3>
   <ol class="steps">
@@ -267,10 +270,16 @@
     <li><b>지우지 않고 빠져나오려면</b>상단 <em>완료</em>, 왼쪽 <em>←</em>, 기기 뒤로가기, 또는 <strong>아무 카드나 한 번 탭</strong> — 넷 다 흔들림만 해제합니다. 흔들리는 중의 첫 탭은 선택으로 처리되지 않아, 실수로 기록 화면이 열리지 않습니다.</li>
   </ol>
 
-  <figure class="shot">
-    <img src="../assets/img/ko/15_issue_delete_confirm.png" alt="통증 삭제 확인 창 — 연결된 모든 기록이 함께 삭제된다는 경고" loading="lazy">
-    <figcaption><b>삭제 확인 창</b> — 이 통증에 연결된 <strong>모든 기록과 처치가 함께</strong> 사라진다고 알려줍니다.</figcaption>
-  </figure>
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/ko/14_issue_wiggle.png" alt="통증 선택 화면이 흔들림 상태 — 카드마다 빨간 ✕ 배지, 상단 오른쪽에 완료" loading="lazy">
+      <figcaption><b>길게 누른 상태</b> — 카드마다 <strong>✕</strong> 가 붙고 상단에 <em>완료</em> 가 나타납니다.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/ko/15_issue_delete_confirm.png" alt="통증 삭제 확인 창 — 연결된 모든 기록이 함께 삭제된다는 경고" loading="lazy">
+      <figcaption><b>삭제 확인 창</b> — 이 통증에 연결된 <strong>모든 기록과 처치가 함께</strong> 사라진다고 알려줍니다.</figcaption>
+    </figure>
+  </div>
   <div class="warn">
     <span class="label">경고</span>
     <p>통증 이슈를 지우면 <strong>그 통증에 연결된 모든 통증 기록과 처치 기록이 함께 삭제</strong>됩니다. 되돌릴 수 없습니다.</p>
@@ -278,7 +287,22 @@
   </div>
 
   <h3>증상·처치 항목 정리 — 길게 누르기</h3>
-  <p>기록 화면의 <strong>증상 칩</strong>과 처치 화면의 <strong>처치 항목 칩</strong>도 같은 방식으로 정리합니다.</p>
+  <p>두 화면의 칩이 똑같이 동작합니다.</p>
+  <ul>
+    <li><strong>통증 기록</strong> 화면의 <em>증상 유형</em> 칩 — "찌릿찌릿해요", "뻐근해요" 같은 느낌 목록</li>
+    <li><strong>처치 기록</strong> 화면의 <em>처치 카테고리</em> 칩 — "이부프로펜", "마사지" 같은 처치 목록</li>
+  </ul>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/ko/19_symptom_wiggle.png" alt="통증 기록 화면 — 신경 느낌 카테고리 칩에만 ⊖ 배지, 제목 옆에 완료" loading="lazy">
+      <figcaption><b>증상 유형 칩</b> — <em>신경 느낌</em> 만 흔들리고 아래 <em>근육·뼈·관절 느낌</em>·<em>퍼지는 통증</em> 은 그대로입니다.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/ko/16_chip_wiggle.png" alt="처치 기록 화면 — 약물 카테고리 칩에만 ⊖ 배지, 제목 옆에 완료" loading="lazy">
+      <figcaption><b>처치 항목 칩</b> — 마찬가지로 <em>약물</em> 만 흔들리고 <em>물리치료</em>·<em>운동</em>·<em>음식</em> 은 그대로입니다.</figcaption>
+    </figure>
+  </div>
   <ol class="steps">
     <li><b>칩을 길게 누릅니다</b><strong>그 칩이 속한 카테고리</strong>의 칩들만 흔들리며 ⊖ 가 붙습니다(다른 카테고리는 그대로). 카테고리 제목 옆에 <em>완료</em> 가 생깁니다.</li>
     <li><b>목록에서 뺄 칩의 ⊖ 를 누릅니다</b>확인 창 없이 바로 처리됩니다. 아래 표를 참고하세요.</li>

@@ -220,16 +220,19 @@
   </table>
   </div>
 
-  <div class="shots">
-    <figure class="shot">
-      <img src="../assets/img/en/14_issue_wiggle.png" alt="Select Pain screen in wiggle mode — a red X badge on each card and Done in the top bar" loading="lazy">
-      <figcaption><b>After long-pressing a pain</b> — each card gets an <strong>✕</strong> and <em>Done</em> appears in the top bar.</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="../assets/img/en/16_chip_wiggle.png" alt="Log Treatment screen with ⊖ badges only on the medication category chips" loading="lazy">
-      <figcaption><b>After long-pressing a chip</b> — chips use <strong>⊖</strong>, and <strong>only the category you long-pressed</strong> wiggles (Therapy, Exercise and Food below are untouched).</figcaption>
-    </figure>
+  <h3>The three places long-press works</h3>
+  <p>Everywhere you take something out of a list, the gesture is the same — <strong>long-press</strong>. Only the target and the badge differ.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Screen</th><th>What you long-press</th><th>Badge</th><th>What wiggles</th><th>To finish</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Select Pain</strong></td><td>A pain card</td><td>✕</td><td>Every card</td><td><em>Done</em> in the top bar</td></tr>
+      <tr><td><strong>Log Pain</strong></td><td>A symptom-type chip</td><td>⊖</td><td>That chip's category only</td><td><em>Done</em> by the category</td></tr>
+      <tr><td><strong>Log Treatment</strong></td><td>A treatment-item chip</td><td>⊖</td><td>That chip's category only</td><td><em>Done</em> by the category</td></tr>
+    </tbody>
+  </table>
   </div>
+  <p>Only the pain card goes through a <strong>confirmation dialog</strong>. Chips leave the list the moment you tap ⊖ — records you already saved keep the item either way, so there is little to undo.</p>
 
   <h3>A single pain record</h3>
   <ol class="steps">
@@ -267,10 +270,16 @@
     <li><b>To back out without deleting</b><em>Done</em> in the top bar, the <em>←</em> arrow, the device back gesture, or <strong>a single tap on any card</strong> — all four just exit wiggle mode. While the cards wiggle, that first tap is not treated as a selection, so you will not accidentally open the logging screen.</li>
   </ol>
 
-  <figure class="shot">
-    <img src="../assets/img/en/15_issue_delete_confirm.png" alt="Delete Pain confirmation dialog warning that all linked records will be deleted" loading="lazy">
-    <figcaption><b>The confirmation dialog</b> — it spells out that <strong>every record and treatment linked to this pain</strong> goes with it.</figcaption>
-  </figure>
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/14_issue_wiggle.png" alt="Select Pain screen in wiggle mode — a red X badge on each card and Done in the top bar" loading="lazy">
+      <figcaption><b>After the long press</b> — each card gets an <strong>✕</strong> and <em>Done</em> appears in the top bar.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/15_issue_delete_confirm.png" alt="Delete Pain confirmation dialog warning that all linked records will be deleted" loading="lazy">
+      <figcaption><b>The confirmation dialog</b> — it spells out that <strong>every record and treatment linked to this pain</strong> goes with it.</figcaption>
+    </figure>
+  </div>
   <div class="warn">
     <span class="label">Warning</span>
     <p>Deleting a pain <strong>also deletes every pain record and treatment record attached to it</strong>. This cannot be undone.</p>
@@ -278,7 +287,22 @@
   </div>
 
   <h3>Tidying symptom and treatment items — long-press</h3>
-  <p>The <strong>symptom chips</strong> on the logging screen and the <strong>treatment item chips</strong> on the treatment screen work the same way.</p>
+  <p>The chips behave identically on both screens.</p>
+  <ul>
+    <li>The <em>Symptom Type</em> chips on the <strong>Log Pain</strong> screen — sensations such as "Tingling" or "Stiff"</li>
+    <li>The <em>Treatment Categories</em> chips on the <strong>Log Treatment</strong> screen — items such as "Ibuprofen" or "Massage"</li>
+  </ul>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/19_symptom_wiggle.png" alt="Log Pain screen with ⊖ badges only on the Nerve sensations chips and Done by the category" loading="lazy">
+      <figcaption><b>Symptom-type chips</b> — only <em>Nerve sensations</em> wiggles; the categories below it are untouched.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/16_chip_wiggle.png" alt="Log Treatment screen with ⊖ badges only on the medication category chips" loading="lazy">
+      <figcaption><b>Treatment-item chips</b> — likewise only <em>Medication</em> wiggles, while <em>Therapy</em>, <em>Exercise</em> and <em>Food</em> stay as they are.</figcaption>
+    </figure>
+  </div>
   <ol class="steps">
     <li><b>Long-press a chip</b>Only the chips in <strong>that chip's category</strong> start wiggling and get a ⊖ badge; other categories are untouched. A <em>Done</em> link appears next to the category title.</li>
     <li><b>Tap ⊖ on the chips you want out of the list</b>This happens immediately, without a confirmation dialog. See the table below for what it does.</li>
