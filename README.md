@@ -2,9 +2,19 @@
 
 통다(Tongda) 앱 사용 설명서 — GitHub Pages 정적 사이트.
 
-- 한국어: https://choi32013.github.io/tongda-manual/ko/
-- English: https://choi32013.github.io/tongda-manual/en/
+- 한국어: https://leco-studio-dev.github.io/tongda-manual/ko/
+- English: https://leco-studio-dev.github.io/tongda-manual/en/
 - 루트(`/`)는 브라우저 언어에 따라 위 두 곳으로 리다이렉트하며, JS가 꺼져 있으면 언어 선택 화면을 보여준다.
+
+## 리포 위치 (2026-07-31 이전)
+
+본문은 이 리포(`leco-studio-dev/tongda-manual`)에 있다. 예전 `choi32013/tongda-manual` 은
+**리다이렉트 스텁만 남긴 채 살아 있으며 삭제하면 안 된다** — 앱 vc196 에 옛 주소가 박혀
+배포됐기 때문에, 그 버전 사용자의 "메뉴얼 보기" 가 그 경로를 통해 여기로 넘어온다.
+앱은 vc197 부터 이 주소를 직접 가리킨다.
+
+`choi32013` 은 이 리포의 협업자(write)다. **Pages 설정 등 리포 설정 변경은 소유자
+(leco-studio-dev) 계정으로만 가능**하다는 점만 유의.
 
 ## 앱에서 열리는 경로
 
@@ -46,7 +56,7 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 
 ## 스크린샷
 
-`assets/img/ko/`, `assets/img/en/` — 언어별 13장, **720px 폭 PNG**(합계 약 1.4MB).
+`assets/img/ko/`, `assets/img/en/` — 언어별 19장, **720px 폭 PNG**(합계 약 2MB).
 vc196 · Pixel 1080×2400 에뮬레이터에서 언어별로 샘플 데이터를 새로 주입해 촬영했다.
 
 UI 가 바뀌면 다시 촬영해야 한다. 순서:
