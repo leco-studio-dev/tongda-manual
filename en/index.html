@@ -214,18 +214,40 @@
     <tbody>
       <tr><td>A single pain record</td><td>Detail view → ✏️ in the top bar</td><td>Detail view → 🗑 in the top bar</td></tr>
       <tr><td>A single treatment record</td><td>Treatment detail → <em>Edit</em></td><td>Treatment detail → <em>Delete</em></td></tr>
-      <tr><td>A pain</td><td>Renaming and changing status are not supported</td><td>Select Pain → <strong>long-press</strong> → ⊖</td></tr>
+      <tr><td>A pain</td><td>Renaming and changing status are not supported</td><td>Select Pain → <strong>long-press</strong> → ✕</td></tr>
       <tr><td>Symptom / treatment items</td><td>No renaming (create a new one)</td><td><strong>Long-press</strong> the chip → ⊖</td></tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/14_issue_wiggle.png" alt="Select Pain screen in wiggle mode — a red X badge on each card and Done in the top bar" loading="lazy">
+      <figcaption><b>After long-pressing a pain</b> — each card gets an <strong>✕</strong> and <em>Done</em> appears in the top bar.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/16_chip_wiggle.png" alt="Log Treatment screen with ⊖ badges only on the medication category chips" loading="lazy">
+      <figcaption><b>After long-pressing a chip</b> — chips use <strong>⊖</strong>, and <strong>only the category you long-pressed</strong> wiggles (Therapy, Exercise and Food below are untouched).</figcaption>
+    </figure>
   </div>
 
   <h3>A single pain record</h3>
   <ol class="steps">
     <li><b>Open the record</b>Tap a pain record in the <em>Records</em> tab, or the <em>Recent Pain</em> card on the home screen. The detail view opens.</li>
     <li><b>Use the icons in the top bar</b>📄 report · ✏️ edit · 🗑 delete — all three act on <strong>the record currently on screen</strong>.</li>
-    <li><b>Use ← → to move between records</b>They step to the previous or newer record of the same pain. Edit and delete then apply to <strong>whichever record you moved to</strong>, so check the date and intensity on screen before deleting.</li>
+    <li><b>Use ← → to move between records</b>A counter under the title shows where you are, such as <em>1 / 60</em>. Edit and delete then apply to <strong>whichever record you moved to</strong>, so check the date and intensity on screen before deleting.</li>
   </ol>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/17_detail_actions.png" alt="Detail view top bar with report, edit and delete icons above a 1/60 record pager" loading="lazy">
+      <figcaption><b>Detail view</b> — the three icons at the top right act on the <strong>record currently shown</strong>, numbered <em>1 / 60</em> here.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/18_edit_warn.png" alt="Save changes to this record? warning dialog" loading="lazy">
+      <figcaption><b>Saving an edit</b> — a warning explains that statistics may change; you tap <em>Save</em> here to apply it.</figcaption>
+    </figure>
+  </div>
   <p><strong>Edit</strong> reopens the logging screen exactly as you saved it — date and time, body map, symptoms and note are all editable. When you tap <em>Save</em>, a <strong>warning appears once</strong>: your edit will feed into the treatment-effectiveness results in statistics and reports, so existing figures may change. You have to tap <em>Save</em> again in that dialog to apply it.</p>
   <p><strong>Delete</strong> also asks for confirmation. Once confirmed it is gone and <strong>cannot be undone</strong>.</p>
 
@@ -240,10 +262,15 @@
   <h3>Deleting a pain — long-press</h3>
   <ol class="steps">
     <li><b>Open the Select Pain screen</b>It is the screen you get from <em>Log Pain</em> on the home screen.</li>
-    <li><b>Long-press a pain card</b>The cards start to wiggle and a ⊖ badge appears at the top right of each one.</li>
-    <li><b>Tap ⊖ on the one you want gone</b>A confirmation dialog appears; it is only deleted once you tap <em>Delete</em> there.</li>
-    <li><b>To back out, tap any card once</b>While the cards are wiggling, the first tap <strong>exits wiggle mode instead of selecting</strong> — so you will not accidentally open the logging screen.</li>
+    <li><b>Long-press a pain card</b>A red <strong>✕</strong> badge appears at the top right of every card, and <em>Done</em> appears in the top bar.</li>
+    <li><b>Tap ✕ on the one you want gone</b>A confirmation dialog appears; it is only deleted once you tap <em>Delete</em> there. Read the warning in that dialog first.</li>
+    <li><b>To back out without deleting</b><em>Done</em> in the top bar, the <em>←</em> arrow, the device back gesture, or <strong>a single tap on any card</strong> — all four just exit wiggle mode. While the cards wiggle, that first tap is not treated as a selection, so you will not accidentally open the logging screen.</li>
   </ol>
+
+  <figure class="shot">
+    <img src="../assets/img/en/15_issue_delete_confirm.png" alt="Delete Pain confirmation dialog warning that all linked records will be deleted" loading="lazy">
+    <figcaption><b>The confirmation dialog</b> — it spells out that <strong>every record and treatment linked to this pain</strong> goes with it.</figcaption>
+  </figure>
   <div class="warn">
     <span class="label">Warning</span>
     <p>Deleting a pain <strong>also deletes every pain record and treatment record attached to it</strong>. This cannot be undone.</p>
@@ -253,7 +280,7 @@
   <h3>Tidying symptom and treatment items — long-press</h3>
   <p>The <strong>symptom chips</strong> on the logging screen and the <strong>treatment item chips</strong> on the treatment screen work the same way.</p>
   <ol class="steps">
-    <li><b>Long-press a chip</b>Only the chips in <strong>that chip's category</strong> start wiggling and get a ⊖ badge; other categories are untouched.</li>
+    <li><b>Long-press a chip</b>Only the chips in <strong>that chip's category</strong> start wiggling and get a ⊖ badge; other categories are untouched. A <em>Done</em> link appears next to the category title.</li>
     <li><b>Tap ⊖ on the chips you want out of the list</b>This happens immediately, without a confirmation dialog. See the table below for what it does.</li>
     <li><b>Tap <em>Done</em> next to the category title</b>The wiggling stops and tapping selects chips normally again.</li>
   </ol>

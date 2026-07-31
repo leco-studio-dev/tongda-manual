@@ -214,18 +214,40 @@
     <tbody>
       <tr><td>통증 기록 1건</td><td>상세 보기 → 상단 ✏️</td><td>상세 보기 → 상단 🗑</td></tr>
       <tr><td>처치 기록 1건</td><td>처치 상세 → <em>편집</em></td><td>처치 상세 → <em>삭제</em></td></tr>
-      <tr><td>통증 이슈</td><td>이름·상태 변경은 지원하지 않습니다</td><td>통증 선택에서 <strong>길게 누르기</strong> → ⊖</td></tr>
+      <tr><td>통증 이슈</td><td>이름·상태 변경은 지원하지 않습니다</td><td>통증 선택에서 <strong>길게 누르기</strong> → ✕</td></tr>
       <tr><td>증상·처치 항목</td><td>이름 변경은 없습니다 (새로 추가)</td><td>칩을 <strong>길게 누르기</strong> → ⊖</td></tr>
     </tbody>
   </table>
+  </div>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/ko/14_issue_wiggle.png" alt="통증 선택 화면이 흔들림 상태 — 카드마다 빨간 ✕ 배지, 상단 오른쪽에 완료" loading="lazy">
+      <figcaption><b>통증을 길게 누른 상태</b> — 카드마다 <strong>✕</strong> 가 붙고 상단에 <em>완료</em> 가 나타납니다.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/ko/16_chip_wiggle.png" alt="처치 기록 화면 — 약물 카테고리 칩에만 ⊖ 배지, 제목 옆에 완료" loading="lazy">
+      <figcaption><b>칩을 길게 누른 상태</b> — 칩은 <strong>⊖</strong> 이고, <strong>길게 누른 칩이 속한 카테고리만</strong> 흔들립니다(아래 물리치료·운동·음식은 그대로).</figcaption>
+    </figure>
   </div>
 
   <h3>통증 기록 1건 고치기·지우기</h3>
   <ol class="steps">
     <li><b>기록을 엽니다</b>하단 <em>기록</em> 탭에서 통증 기록을 누르거나, 홈의 <em>최근 통증</em> 카드를 누릅니다. 상세 보기가 열립니다.</li>
     <li><b>상단 오른쪽 아이콘을 씁니다</b>📄 리포트 · ✏️ 편집 · 🗑 삭제 — 세 아이콘 모두 <strong>지금 화면에 보이는 그 기록</strong>에 적용됩니다.</li>
-    <li><b>다른 기록으로 옮기려면 ← → 화살표</b>같은 통증의 <em>이전 기록</em>·<em>최신 기록</em>으로 넘어갑니다. 옮긴 뒤 편집·삭제를 누르면 <strong>옮겨간 그 기록</strong>이 대상이 됩니다. 지우기 전에 화면의 날짜·강도를 확인하세요.</li>
+    <li><b>다른 기록으로 옮기려면 ← → 화살표</b>제목 아래 <em>1 / 60</em> 처럼 몇 번째 기록인지 표시됩니다. 옮긴 뒤 편집·삭제를 누르면 <strong>옮겨간 그 기록</strong>이 대상이 됩니다. 지우기 전에 화면의 날짜·강도를 확인하세요.</li>
   </ol>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/ko/17_detail_actions.png" alt="상세 보기 상단바 — 리포트·편집·삭제 아이콘과 1/60 기록 이동 화살표" loading="lazy">
+      <figcaption><b>상세 보기</b> — 오른쪽 위 세 아이콘이 <em>1 / 60</em> 로 표시된 <strong>현재 기록</strong>에 적용됩니다.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/ko/18_edit_warn.png" alt="통증 기록을 수정할까요? 경고 다이얼로그" loading="lazy">
+      <figcaption><b>수정 저장 시</b> — 저장을 누르면 통계에 반영된다는 경고가 한 번 뜨고, 여기서 <em>저장</em>을 다시 눌러야 반영됩니다.</figcaption>
+    </figure>
+  </div>
   <p><strong>편집</strong>을 누르면 기록 화면이 그때 저장한 내용 그대로 열립니다. 일시·바디맵·증상·메모를 모두 고칠 수 있고, <em>저장</em>을 누르면 <strong>경고가 한 번 뜹니다</strong> — "수정한 내용은 통계와 리포트의 치료 효과 분석에 반영되어 기존 결과가 달라질 수 있어요". 여기서 <em>저장</em>을 한 번 더 눌러야 반영됩니다.</p>
   <p><strong>삭제</strong>도 확인 창을 거칩니다. 확인하면 바로 지워지고 <strong>되돌릴 수 없습니다</strong>.</p>
 
@@ -240,10 +262,15 @@
   <h3>통증 이슈 지우기 — 길게 누르기</h3>
   <ol class="steps">
     <li><b>통증 선택 화면을 엽니다</b>홈의 <em>통증 기록</em>을 누르면 나오는 화면입니다.</li>
-    <li><b>통증 카드를 길게 누릅니다</b>카드들이 흔들리고, 각 카드 오른쪽 위에 ⊖ 표시가 붙습니다.</li>
-    <li><b>지울 통증의 ⊖ 를 누릅니다</b>확인 창이 뜨고, 여기서 <em>삭제</em>를 눌러야 지워집니다.</li>
-    <li><b>그냥 빠져나오려면 아무 카드나 한 번 누릅니다</b>흔들리는 상태에서의 첫 탭은 <strong>선택이 아니라 흔들림 해제</strong>로 처리됩니다. 그래서 실수로 기록 화면이 열리지 않습니다.</li>
+    <li><b>통증 카드를 길게 누릅니다</b>카드마다 오른쪽 위에 빨간 <strong>✕</strong> 가 붙고, 상단 오른쪽에 <em>완료</em> 가 나타납니다.</li>
+    <li><b>지울 통증의 ✕ 를 누릅니다</b>확인 창이 뜨고, 여기서 <em>삭제</em>를 눌러야 지워집니다. 창의 경고 문구를 꼭 읽어보세요.</li>
+    <li><b>지우지 않고 빠져나오려면</b>상단 <em>완료</em>, 왼쪽 <em>←</em>, 기기 뒤로가기, 또는 <strong>아무 카드나 한 번 탭</strong> — 넷 다 흔들림만 해제합니다. 흔들리는 중의 첫 탭은 선택으로 처리되지 않아, 실수로 기록 화면이 열리지 않습니다.</li>
   </ol>
+
+  <figure class="shot">
+    <img src="../assets/img/ko/15_issue_delete_confirm.png" alt="통증 삭제 확인 창 — 연결된 모든 기록이 함께 삭제된다는 경고" loading="lazy">
+    <figcaption><b>삭제 확인 창</b> — 이 통증에 연결된 <strong>모든 기록과 처치가 함께</strong> 사라진다고 알려줍니다.</figcaption>
+  </figure>
   <div class="warn">
     <span class="label">경고</span>
     <p>통증 이슈를 지우면 <strong>그 통증에 연결된 모든 통증 기록과 처치 기록이 함께 삭제</strong>됩니다. 되돌릴 수 없습니다.</p>
@@ -253,7 +280,7 @@
   <h3>증상·처치 항목 정리 — 길게 누르기</h3>
   <p>기록 화면의 <strong>증상 칩</strong>과 처치 화면의 <strong>처치 항목 칩</strong>도 같은 방식으로 정리합니다.</p>
   <ol class="steps">
-    <li><b>칩을 길게 누릅니다</b><strong>그 칩이 속한 카테고리</strong>의 칩들만 흔들리며 ⊖ 가 붙습니다(다른 카테고리는 그대로).</li>
+    <li><b>칩을 길게 누릅니다</b><strong>그 칩이 속한 카테고리</strong>의 칩들만 흔들리며 ⊖ 가 붙습니다(다른 카테고리는 그대로). 카테고리 제목 옆에 <em>완료</em> 가 생깁니다.</li>
     <li><b>목록에서 뺄 칩의 ⊖ 를 누릅니다</b>확인 창 없이 바로 처리됩니다. 아래 표를 참고하세요.</li>
     <li><b>카테고리 제목 오른쪽의 <em>완료</em>를 누릅니다</b>흔들림이 끝나고 다시 평소처럼 선택할 수 있습니다.</li>
   </ol>
