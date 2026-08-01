@@ -30,6 +30,7 @@
     <li><a href="#pain">통증 기록하기</a></li>
     <li><a href="#bodymap">바디맵 사용법</a></li>
     <li><a href="#treatment">처치 기록하기</a></li>
+    <li><a href="#attachments">자료 사진 (MRI·CT·X-ray)</a></li>
     <li><a href="#manage">고치기·지우기</a></li>
     <li><a href="#browse">기록 찾아보기</a></li>
     <li><a href="#stats">통증 분석</a></li>
@@ -54,6 +55,7 @@
   <div class="chips">
     <a class="chip" href="#quickstart">처음 시작하기</a>
     <a class="chip" href="#bodymap">바디맵 그리기</a>
+    <a class="chip" href="#attachments">MRI·CT 사진 보관</a>
     <a class="chip" href="#manage">잘못 쓴 기록 고치기·지우기</a>
     <a class="chip" href="#report">병원에 보여줄 리포트</a>
     <a class="chip" href="#backup">기기 변경 · 백업</a>
@@ -204,6 +206,88 @@
   <p>처치 기록을 누르면 <strong>처치 상세</strong> 화면이 열립니다. 여기서는 이 처치 전후의 통증, 이 통증에서 해당 처치를 몇 번 썼는지, 평균 효과를 볼 수 있습니다. 수정·삭제도 이 화면에서 하며, 통증 기록과 마찬가지로 통계에 영향을 줍니다.</p>
 </section>
 
+<section id="attachments">
+  <h2>자료 사진 (MRI·CT·X-ray)</h2>
+  <p>검사 사진을 통증에 붙여 보관하는 기능입니다. MRI·CT·X-ray 판독 사진을 찍어두거나, 붓기·발진처럼 눈에 보이는 상태를 남길 때 씁니다. 진료 때 "그때 찍은 사진"을 바로 꺼내 보여줄 수 있습니다.</p>
+
+  <div class="note">
+    <span class="label">기록이 아니라 통증에 붙습니다</span>
+    <p>사진은 <strong>통증 이슈 단위</strong>로 저장됩니다. MRI 한 장은 특정 회차의 기록이 아니라 그 <em>질환</em>에 대한 자료이고, 몇 달 뒤에 봐도 계속 유효하기 때문입니다. 그래서 통증 상세 화면에 붙어 있고, 개별 통증 기록에는 붙지 않습니다.</p>
+  </div>
+
+  <h3>사진 넣기</h3>
+  <ol class="steps">
+    <li><b>통증 상세 화면을 엽니다</b>하단 <em>기록</em> 탭에서 통증 기록을 누르면 열립니다.</li>
+    <li><b><em>자료 사진</em> 카드를 누릅니다</b>바디맵 아래에 있습니다. 사진이 있으면 썸네일과 장수가, 없으면 안내 문구가 보입니다.</li>
+    <li><b>우하단 <em>+</em> 를 누릅니다</b>사진 선택기가 열립니다. 여러 장을 한 번에 고를 수 있습니다.</li>
+  </ol>
+  <div class="tip">
+    <span class="label">사진 권한을 묻지 않습니다</span>
+    <p>통다는 갤러리 전체 접근 권한을 요구하지 않습니다. 안드로이드 기본 사진 선택기를 쓰기 때문에 <strong>직접 고른 사진만</strong> 앱에 전달됩니다. 선택기 상단에도 그렇게 안내됩니다.</p>
+  </div>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/ko/20_att_card.png" alt="통증 상세의 자료 사진 카드 — 썸네일 3장과 장수 표시" loading="lazy">
+      <figcaption><b>자료 사진 카드</b> — 통증 상세의 바디맵 아래. 썸네일과 장수가 보이고, 누르면 자료실로 들어갑니다.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/ko/21_att_grid.png" alt="자료실 그리드 — 사진마다 설명과 촬영·추가 날짜" loading="lazy">
+      <figcaption><b>자료실</b> — 사진마다 설명과 날짜가 붙습니다. 우하단 <em>+</em> 로 추가합니다.</figcaption>
+    </figure>
+  </div>
+
+  <h3>날짜 — "촬영"과 "추가"는 다릅니다</h3>
+  <p>사진마다 날짜가 표시되는데, 앞의 라벨을 보셔야 합니다.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>표시</th><th>뜻</th></tr></thead>
+    <tbody>
+      <tr><td><strong>촬영</strong> 2026.03.14</td><td>사진 파일에 기록된 <strong>실제 촬영 시각</strong>. 카메라로 찍은 사진에는 대개 들어 있습니다.</td></tr>
+      <tr><td><strong>추가</strong> 2026.08.01</td><td>촬영 정보가 없는 파일(캡처 이미지, 다시 저장한 파일 등)이라 <strong>앱에 넣은 날</strong>을 대신 보여주는 것입니다.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>목록은 <strong>촬영일이 최근인 순서</strong>로 정렬됩니다. 3월 MRI 와 5월 X-ray 를 넣으면 넣은 순서와 상관없이 검사 시간 순으로 나열됩니다. 내보낸 파일 이름에도 촬영일이 들어갑니다.</p>
+
+  <h3>사진 보기·설명 달기</h3>
+  <p>사진을 누르면 전체화면으로 열립니다. 좌우로 넘겨 다른 사진을 보고, <strong>두 손가락으로 확대</strong>해 판독지의 글씨나 병변 부위를 자세히 볼 수 있습니다. 상단 ✏️ 로 설명을 답니다 — "2026-03 요추 MRI"처럼 적어두면 나중에 찾기 쉽습니다.</p>
+
+  <h3>사진 지우기</h3>
+  <p>두 가지 방법이 있고, 둘 다 확인 창을 거칩니다.</p>
+  <ul>
+    <li><strong>자료실에서 길게 누르기</strong> → 사진마다 <strong>✕</strong> 가 붙습니다 → 지울 사진의 ✕ → 확인. 끝내려면 상단 <em>완료</em>, 기기 뒤로가기, 또는 아무 사진이나 한 번 탭.</li>
+    <li><strong>전체화면에서</strong> 상단 🗑 → 확인.</li>
+  </ul>
+
+  <figure class="shot">
+    <img src="../assets/img/ko/22_att_wiggle.png" alt="자료실을 길게 누른 상태 — 사진마다 ✕ 배지, 상단에 완료" loading="lazy">
+    <figcaption><b>길게 누른 상태</b> — 통증 카드를 지울 때와 똑같습니다. 흔들리는 중 첫 탭은 사진을 열지 않고 흔들림만 해제합니다.</figcaption>
+  </figure>
+
+  <div class="warn">
+    <span class="label">지우면 파일까지 사라집니다</span>
+    <p>사진을 지우면 앱 안에 복사해 둔 파일이 <strong>완전히 삭제</strong>되고 되돌릴 수 없습니다. 갤러리의 원본은 그대로지만, 원본을 이미 지우셨다면 그 사진은 복구할 방법이 없습니다.</p>
+    <p>통증 이슈를 지울 때도 <strong>그 통증의 사진이 전부 함께 삭제</strong>됩니다.</p>
+  </div>
+
+  <h3>⚠ 사진은 백업에 들어가지 않습니다</h3>
+  <div class="warn">
+    <p><a href="#backup">데이터 내보내기</a>로 만드는 <code>.tngd</code> 백업 파일에는 <strong>사진이 포함되지 않습니다.</strong> 통증·처치 기록만 들어갑니다.</p>
+    <p>그래서 <strong>기기를 바꾸실 때는 사진을 따로 옮기셔야 합니다.</strong> 자료실 상단의 <em>사진 내보내기</em>(💾)를 누르고 폴더를 고르면, 그 통증의 사진이 전부 그 폴더로 복사됩니다. 파일 이름에 통증 이름과 촬영일이 들어가 나중에도 알아볼 수 있습니다.</p>
+    <p>가져오기에서 <strong>전부 교체</strong>를 고르면 기존 사진도 함께 삭제됩니다. 가져오기 창에도 같은 경고가 표시됩니다.</p>
+  </div>
+
+  <h3>무료로 쓸 수 있는 만큼</h3>
+  <p>무료 사용 시 <strong>통증 하나당 3장</strong>까지 저장할 수 있고, 프리미엄은 무제한입니다. 사진은 기기 저장공간을 계속 차지하는 자료라 광고 시청으로 푸는 방식은 두지 않았습니다.</p>
+  <p>장당 <strong>20MB</strong>가 넘는 사진은 추가되지 않습니다. 휴대폰으로 찍은 판독지 사진은 보통 3~8MB 정도라 대부분 문제되지 않습니다.</p>
+
+  <div class="note">
+    <span class="label">사진은 어디에 저장되나요</span>
+    <p>앱 전용 저장 공간에 복사본이 저장됩니다. 다른 앱은 열어볼 수 없고, 갤러리에서 원본을 지워도 앱 안의 사진은 남습니다. 인터넷으로 어디에도 올라가지 않습니다 — 자세한 내용은 <a href="#privacy">내 데이터는 어디에 있나요</a>를 보세요.</p>
+  </div>
+</section>
+
 <section id="manage">
   <h2>고치기·지우기</h2>
   <p>통다에서 무언가를 지우는 방법은 대상에 따라 다릅니다. <strong>기록</strong>은 상세 화면의 버튼으로, <strong>통증 이슈와 증상·처치 항목</strong>은 <strong>길게 누르기</strong>로 지웁니다. 실수로 지우기 어렵게 하려고 일부러 다르게 만든 부분입니다.</p>
@@ -216,11 +300,12 @@
       <tr><td>처치 기록 1건</td><td>처치 상세 → <em>편집</em></td><td>처치 상세 → <em>삭제</em></td></tr>
       <tr><td>통증 이슈</td><td>이름·상태 변경은 지원하지 않습니다</td><td>통증 선택에서 <strong>길게 누르기</strong> → ✕</td></tr>
       <tr><td>증상·처치 항목</td><td>이름 변경은 없습니다 (새로 추가)</td><td>칩을 <strong>길게 누르기</strong> → ⊖</td></tr>
+      <tr><td>자료 사진</td><td>설명(캡션)은 전체화면에서 ✏️ 로 수정</td><td>자료실에서 <strong>길게 누르기</strong> → ✕, 또는 전체화면 🗑</td></tr>
     </tbody>
   </table>
   </div>
 
-  <h3>길게 누르기가 작동하는 세 곳</h3>
+  <h3>길게 누르기가 작동하는 네 곳</h3>
   <p>목록에서 항목을 빼는 곳은 모두 <strong>길게 누르기</strong>로 통일되어 있습니다. 눌러야 할 곳과 배지 모양만 다릅니다.</p>
   <div class="tablewrap">
   <table>
@@ -229,10 +314,11 @@
       <tr><td><strong>통증 선택</strong></td><td>통증 카드</td><td>✕</td><td>모든 카드</td><td>상단 <em>완료</em></td></tr>
       <tr><td><strong>통증 기록</strong></td><td>증상 유형 칩</td><td>⊖</td><td>그 칩의 카테고리만</td><td>카테고리 옆 <em>완료</em></td></tr>
       <tr><td><strong>처치 기록</strong></td><td>처치 항목 칩</td><td>⊖</td><td>그 칩의 카테고리만</td><td>카테고리 옆 <em>완료</em></td></tr>
+      <tr><td><strong>자료 사진</strong></td><td>사진 타일</td><td>✕</td><td>모든 사진</td><td>상단 <em>완료</em></td></tr>
     </tbody>
   </table>
   </div>
-  <p>통증 카드만 <strong>확인 창을 거칩니다</strong>. 칩은 ⊖ 를 누르는 즉시 목록에서 빠집니다(과거 기록은 그대로 유지되므로 되돌릴 필요가 크지 않기 때문입니다).</p>
+  <p><strong>통증 카드와 자료 사진은 확인 창을 거칩니다</strong> — 둘 다 지우면 되돌릴 수 없기 때문입니다(사진은 파일까지 삭제). 반면 칩은 ⊖ 를 누르는 즉시 목록에서 빠집니다. 과거 기록에 남은 항목은 그대로라 되돌릴 필요가 크지 않기 때문입니다.</p>
 
   <h3>통증 기록 1건 고치기·지우기</h3>
   <ol class="steps">
@@ -512,6 +598,10 @@
   <p>기록이 기기 안에만 있으므로, <strong>기기를 바꾸거나 앱을 삭제하기 전에는 반드시 백업</strong>하세요. 설정 → 데이터에서 합니다.</p>
 
   <h3>데이터 내보내기</h3>
+  <div class="warn">
+    <span class="label">사진은 별도입니다</span>
+    <p>백업 파일에는 통증·처치 기록만 담기고 <strong><a href="#attachments">자료 사진</a>은 포함되지 않습니다.</strong> 기기를 바꾸실 때는 자료실의 <em>사진 내보내기</em>로 사진을 따로 옮겨주세요.</p>
+  </div>
   <p><code>.tngd</code> 확장자의 백업 파일 하나가 만들어집니다. 저장 위치는 직접 고르며, 클라우드 드라이브나 메일로 보관해도 됩니다. 파일 안의 내용은 암호화되어 있어 텍스트 편집기로 읽을 수 없습니다. 별도의 비밀번호를 입력하지는 않습니다.</p>
 
   <h3>데이터 가져오기</h3>
@@ -553,6 +643,7 @@
       <tr><td>하루 통증 기록</td><td>3건까지</td><td>무제한</td></tr>
       <tr><td>하루 처치 기록</td><td>3건까지</td><td>무제한</td></tr>
       <tr><td>통증 이슈</td><td>2개 (이후 1개당 광고 1회)</td><td>무제한</td></tr>
+      <tr><td>자료 사진</td><td>통증 하나당 3장</td><td>무제한</td></tr>
       <tr><td>통계 열람 기간</td><td>최근 30일</td><td>전체 기간</td></tr>
       <tr><td>광고</td><td>있음</td><td>없음</td></tr>
     </tbody>

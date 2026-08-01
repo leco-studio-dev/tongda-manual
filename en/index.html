@@ -30,6 +30,7 @@
     <li><a href="#pain">Logging pain</a></li>
     <li><a href="#bodymap">Using the body map</a></li>
     <li><a href="#treatment">Logging treatments</a></li>
+    <li><a href="#attachments">Photos (MRI, CT, X-ray)</a></li>
     <li><a href="#manage">Editing and deleting</a></li>
     <li><a href="#browse">Browsing your records</a></li>
     <li><a href="#stats">Pain Analysis</a></li>
@@ -54,6 +55,7 @@
   <div class="chips">
     <a class="chip" href="#quickstart">First steps</a>
     <a class="chip" href="#bodymap">Body map</a>
+    <a class="chip" href="#attachments">Keep MRI &amp; CT images</a>
     <a class="chip" href="#manage">Fix or delete an entry</a>
     <a class="chip" href="#report">Report for your doctor</a>
     <a class="chip" href="#backup">New phone · backup</a>
@@ -204,6 +206,88 @@
   <p>Tapping a treatment record opens the <strong>treatment detail</strong> screen, showing the pain before and after it, how many times you have used it for this pain, and its average effect. Editing and deleting happen here too, and — as with pain records — they change your statistics.</p>
 </section>
 
+<section id="attachments">
+  <h2>Photos (MRI, CT, X-ray)</h2>
+  <p>Keep imaging with the pain it belongs to. Photograph an MRI, CT or X-ray film, or capture something visible like swelling or a rash — then pull it up at an appointment instead of describing it from memory.</p>
+
+  <div class="note">
+    <span class="label">Attached to the pain, not to one entry</span>
+    <p>Photos are stored <strong>per pain</strong>. An MRI is not a fact about one logged episode — it is imaging of the <em>condition</em>, and it stays just as relevant months later. That is why the library hangs off the pain's detail screen rather than off individual records.</p>
+  </div>
+
+  <h3>Adding a photo</h3>
+  <ol class="steps">
+    <li><b>Open the pain's detail screen</b>Tap any pain record in the <em>Records</em> tab.</li>
+    <li><b>Tap the <em>Photos</em> card</b>It sits below the body map, showing thumbnails and a count — or a prompt when it is still empty.</li>
+    <li><b>Tap <em>+</em> at the bottom right</b>The photo picker opens; you can select several at once.</li>
+  </ol>
+  <div class="tip">
+    <span class="label">No photo permission is requested</span>
+    <p>Tongda never asks for access to your whole gallery. It uses Android's own photo picker, so <strong>only the images you pick</strong> are handed to the app — the picker says as much at the top.</p>
+  </div>
+
+  <div class="shots">
+    <figure class="shot">
+      <img src="../assets/img/en/20_att_card.png" alt="Photos card on the pain detail screen with three thumbnails and a count" loading="lazy">
+      <figcaption><b>The Photos card</b> — below the body map on a pain's detail screen. Tap it to open the library.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="../assets/img/en/21_att_grid.png" alt="Photo library grid with a label and date under each photo" loading="lazy">
+      <figcaption><b>The library</b> — each photo carries a label and a date. <em>+</em> at the bottom right adds more.</figcaption>
+    </figure>
+  </div>
+
+  <h3>Dates — "Taken" and "Added" are different</h3>
+  <p>Every photo shows a date. The word in front of it matters.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Shown as</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Taken</strong> Mar 14, 2026</td><td>The <strong>capture time recorded in the file itself</strong>. Camera photos almost always carry it.</td></tr>
+      <tr><td><strong>Added</strong> Aug 1, 2026</td><td>The file has no capture date (a screenshot, a re-saved download), so the app shows <strong>when you added it</strong> instead.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>The library is sorted by <strong>capture date, newest first</strong>. Add a March MRI and a May X-ray in any order and they still line up in the order the scans were taken. Exported filenames carry the capture date too.</p>
+
+  <h3>Viewing and labelling</h3>
+  <p>Tap a photo to open it full screen. Swipe between photos, and <strong>pinch to zoom</strong> when you need to read the text on a report or look closely at one area. The ✏️ button adds a label — something like "Lumbar MRI, Mar 2026" makes it findable later.</p>
+
+  <h3>Deleting a photo</h3>
+  <p>Two ways, both with a confirmation step.</p>
+  <ul>
+    <li><strong>Long-press in the library</strong> → an <strong>✕</strong> appears on every photo → tap ✕ on the one to remove → confirm. To finish: <em>Done</em> in the top bar, the device back gesture, or a single tap on any photo.</li>
+    <li><strong>From full screen</strong> → 🗑 in the top bar → confirm.</li>
+  </ul>
+
+  <figure class="shot">
+    <img src="../assets/img/en/22_att_wiggle.png" alt="Photo library after a long press — an X badge on each photo and Done in the top bar" loading="lazy">
+    <figcaption><b>After the long press</b> — identical to deleting a pain card. While the photos wiggle, the first tap closes the mode instead of opening a photo.</figcaption>
+  </figure>
+
+  <div class="warn">
+    <span class="label">Deleting removes the file too</span>
+    <p>Deleting a photo <strong>erases the app's copy for good</strong> — there is no undo. The original in your gallery is untouched, but if you have already deleted that, the photo is gone.</p>
+    <p>Deleting a whole pain also <strong>deletes every photo attached to it</strong>.</p>
+  </div>
+
+  <h3>⚠ Photos are not included in backups</h3>
+  <div class="warn">
+    <p>The <code>.tngd</code> file produced by <a href="#backup">Export Data</a> contains <strong>no photos</strong> — only pain and treatment records.</p>
+    <p>So <strong>move your photos separately when you change devices.</strong> Tap <em>Export photos</em> (💾) at the top of the library, choose a folder, and every photo for that pain is copied there. Filenames include the pain's name and the capture date so they stay recognisable.</p>
+    <p>Choosing <strong>Replace all</strong> on import deletes existing photos as well; the import dialog carries the same warning.</p>
+  </div>
+
+  <h3>How many the free tier holds</h3>
+  <p>The free tier stores <strong>3 photos per pain</strong>; Premium is unlimited. There is no "watch an ad to unlock" here — photos occupy storage permanently, so a one-day pass would not fit.</p>
+  <p>Files larger than <strong>20MB</strong> are rejected. A phone photo of an imaging film is usually 3–8MB, so this rarely comes up.</p>
+
+  <div class="note">
+    <span class="label">Where the photos are kept</span>
+    <p>A copy is stored in the app's own private storage. No other app can open it, and it survives you deleting the original from your gallery. Nothing is uploaded anywhere — see <a href="#privacy">Where your data lives</a>.</p>
+  </div>
+</section>
+
 <section id="manage">
   <h2>Editing and deleting</h2>
   <p>How you remove something depends on what it is. <strong>Records</strong> are deleted with a button on their detail screen; a <strong>pain</strong> and the <strong>symptom and treatment items</strong> are deleted by <strong>long-pressing</strong> them. The difference is deliberate — it makes the destructive actions hard to trigger by accident.</p>
@@ -216,11 +300,12 @@
       <tr><td>A single treatment record</td><td>Treatment detail → <em>Edit</em></td><td>Treatment detail → <em>Delete</em></td></tr>
       <tr><td>A pain</td><td>Renaming and changing status are not supported</td><td>Select Pain → <strong>long-press</strong> → ✕</td></tr>
       <tr><td>Symptom / treatment items</td><td>No renaming (create a new one)</td><td><strong>Long-press</strong> the chip → ⊖</td></tr>
+      <tr><td>A photo</td><td>Edit its label with ✏️ in full screen</td><td><strong>Long-press</strong> in the library → ✕, or 🗑 in full screen</td></tr>
     </tbody>
   </table>
   </div>
 
-  <h3>The three places long-press works</h3>
+  <h3>The four places long-press works</h3>
   <p>Everywhere you take something out of a list, the gesture is the same — <strong>long-press</strong>. Only the target and the badge differ.</p>
   <div class="tablewrap">
   <table>
@@ -229,10 +314,11 @@
       <tr><td><strong>Select Pain</strong></td><td>A pain card</td><td>✕</td><td>Every card</td><td><em>Done</em> in the top bar</td></tr>
       <tr><td><strong>Log Pain</strong></td><td>A symptom-type chip</td><td>⊖</td><td>That chip's category only</td><td><em>Done</em> by the category</td></tr>
       <tr><td><strong>Log Treatment</strong></td><td>A treatment-item chip</td><td>⊖</td><td>That chip's category only</td><td><em>Done</em> by the category</td></tr>
+      <tr><td><strong>Photos</strong></td><td>A photo tile</td><td>✕</td><td>Every photo</td><td><em>Done</em> in the top bar</td></tr>
     </tbody>
   </table>
   </div>
-  <p>Only the pain card goes through a <strong>confirmation dialog</strong>. Chips leave the list the moment you tap ⊖ — records you already saved keep the item either way, so there is little to undo.</p>
+  <p><strong>Pain cards and photos go through a confirmation dialog</strong> — both are unrecoverable once gone (a photo takes its file with it). Chips, by contrast, leave the list the moment you tap ⊖: records you already saved keep the item either way, so there is little to undo.</p>
 
   <h3>A single pain record</h3>
   <ol class="steps">
@@ -512,6 +598,10 @@
   <p>Because records live only on your device, <strong>always export a backup before changing phones or uninstalling the app</strong>. Go to Settings → Data.</p>
 
   <h3>Export Data</h3>
+  <div class="warn">
+    <span class="label">Photos are separate</span>
+    <p>A backup holds pain and treatment records only — <strong><a href="#attachments">photos are not included</a>.</strong> Use <em>Export photos</em> in the library to move them when you change devices.</p>
+  </div>
   <p>This produces a single backup file with a <code>.tngd</code> extension. You choose where it goes, and you can keep it in a cloud drive or email it to yourself. The contents are encrypted, so it cannot be read in a text editor. No password is requested.</p>
 
   <h3>Import Data</h3>
@@ -553,6 +643,7 @@
       <tr><td>Pain records per day</td><td>Up to 3</td><td>Unlimited</td></tr>
       <tr><td>Treatment records per day</td><td>Up to 3</td><td>Unlimited</td></tr>
       <tr><td>Pains tracked</td><td>2 (one ad per additional pain)</td><td>Unlimited</td></tr>
+      <tr><td>Photos</td><td>3 per pain</td><td>Unlimited</td></tr>
       <tr><td>Statistics history</td><td>Last 30 days</td><td>Entire history</td></tr>
       <tr><td>Ads</td><td>Yes</td><td>None</td></tr>
     </tbody>

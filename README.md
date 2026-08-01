@@ -52,11 +52,16 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 | 길게 눌러 삭제(wiggle) | `ui/common/WiggleChip.kt` + 호출부 3곳: `ui/issue/IssueSelectScreen.kt`(이슈, 확인 다이얼로그 있음), `ui/record/RecordScreen.kt`(증상 칩), `ui/treatment/TreatmentScreen.kt`(처치 칩). 칩 ⊖ 는 **직접 추가 항목=삭제 / 기본 항목=숨김**(`setSymptomEnabled(false)` / `setItemEnabled(false)`)으로 분기 |
 | 숨긴 기본 항목은 복구 불가 | `setSymptomEnabled(…, true)` 를 호출하는 UI 가 없다. 같은 이름 재추가도 `disabled` 필터에 걸려 안 나타난다 (`data/prefs/SymptomRepository.kt` `effectiveSymptomsByCategory`) |
 | 기록 수정·삭제 진입점 | `ui/detail/DetailScreen.kt` 상단바 ✏️/🗑 (대상 = 현재 보고 있는 `recordId`), `ui/treatment/TreatmentDetailScreen.kt` 편집/삭제. 편집 저장 시 경고 다이얼로그 = `RecordScreen.kt:245`, `TreatmentScreen.kt` |
+| 자료 사진: 이슈 단위 첨부 | `data/db/IssueAttachment.kt` (painIssueId 로 이슈에 종속), `data/attachments/AttachmentRepository.kt` |
+| 촬영일 vs 추가일 | EXIF `DateTimeOriginal` → `capturedAt`, 없으면 null 이라 UI 가 `createdAt`(추가일)로 폴백. 정렬도 `COALESCE(capturedAt, createdAt) DESC` (`data/db/IssueAttachmentDao.kt`) |
+| 사진 무료 3장 / 20MB 상한 | `FreeLimitsRepository.MAX_ATTACHMENTS_PER_ISSUE`, `AttachmentRepository.MAX_FILE_BYTES` |
+| 사진은 백업 미포함 | `.tngd` 는 단일 JSON 통암호화(10MB 상한)라 파일을 담지 못한다. REPLACE_ALL 가져오기는 사진을 삭제하며 `settings_dialog_import_options` 에 경고가 있다 |
+| 사진 길게 눌러 삭제 = ✕ | `ui/attachments/AttachmentScreen.kt` (combinedClickable + ✕ 배지). 칩(⊖)과 달리 확인 창을 거친다 — 파일이 영구 삭제이기 때문 |
 | 이슈 이름·상태 변경 없음 | 생성 시 `status = "Active"` 고정(`ui/issue/IssueSelectViewModel.kt:77`), rename/status 변경 호출부 없음 |
 
 ## 스크린샷
 
-`assets/img/ko/`, `assets/img/en/` — 언어별 19장, **720px 폭 PNG**(합계 약 2MB).
+`assets/img/ko/`, `assets/img/en/` — 언어별 23장, **720px 폭 PNG**(합계 약 2.5MB).
 vc196 · Pixel 1080×2400 에뮬레이터에서 언어별로 샘플 데이터를 새로 주입해 촬영했다.
 
 UI 가 바뀌면 다시 촬영해야 한다. 순서:
