@@ -42,8 +42,10 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 
 | 문서 내용 | 근거 (Tongda 레포 `app_dev`) |
 |---|---|
-| 하루 기록 3건, 통증 이슈 2개, 통계 30일 | `data/prefs/FreeLimitsRepository.kt` |
-| 처치 효과 전후 6시간 규칙 | `report_effect_disclaimer`, `treatment_detail_effect_note` |
+| 기록 무제한(하루 한도 없음, v230), 통증 이슈 2개, 사진 이슈당 1장, 통계 30일 | `data/prefs/FreeLimitsRepository.kt` — 강제되는 무료 제한은 `MAX_ACTIVE_ISSUES`·`FREE_ATTACHMENTS_PER_ISSUE`·`FREE_STATS_DAYS` 셋뿐 |
+| 무료 리포트도 최근 30일 (v230) | `data/backup/ReportWindow.kt` + `HtmlReportRepository.generate` 가 `statsFloorDateFresh()` 로 재단, `report_free_window_note` |
+| 광고는 보상형 4곳(이슈 추가·사진 추가·리포트 내보내기·백업 내보내기), 배너 없음 | `ads/RewardedAdManager.Slot`, `ui/common/AdGateDialog.kt`, `ui/common/ExportAdGate.kt` (리포트는 설정·상세 두 입구 모두 게이트, v231) |
+| 처치 효과 전후 **48시간** 규칙 + 한 쌍은 가장 앞선 처치 하나에만 귀속 (v228~229) | `ui/stats/TreatmentEffect.kt` (`WINDOW_HOURS`, `samples()`), `report_effect_disclaimer`, `treatment_detail_effect_note` |
 | 강도 색상 공식 (1~10) | `ui/common/IntensityBadge.kt` |
 | 백업 `.tngd` 형식 · 10MB 한도 | `data/backup/BackupRepository.kt` |
 | 리포트 구성 항목 | `data/backup/HtmlReportRepository.kt` |
@@ -54,7 +56,7 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 | 기록 수정·삭제 진입점 | `ui/detail/DetailScreen.kt` 상단바 ✏️/🗑 (대상 = 현재 보고 있는 `recordId`), `ui/treatment/TreatmentDetailScreen.kt` 편집/삭제. 편집 저장 시 경고 다이얼로그 = `RecordScreen.kt:245`, `TreatmentScreen.kt` |
 | 자료 사진: 이슈 단위 첨부 | `data/db/IssueAttachment.kt` (painIssueId 로 이슈에 종속), `data/attachments/AttachmentRepository.kt` |
 | 촬영일 vs 추가일 | EXIF `DateTimeOriginal` → `capturedAt`, 없으면 null 이라 UI 가 `createdAt`(추가일)로 폴백. 정렬도 `COALESCE(capturedAt, createdAt) DESC` (`data/db/IssueAttachmentDao.kt`) |
-| 사진 무료 3장 / 20MB 상한 | `FreeLimitsRepository.MAX_ATTACHMENTS_PER_ISSUE`, `AttachmentRepository.MAX_FILE_BYTES` |
+| 사진 무료 1장(이후 1장당 광고) / 20MB 상한 | `FreeLimitsRepository.FREE_ATTACHMENTS_PER_ISSUE`, `AttachmentRepository.MAX_FILE_BYTES` |
 | 사진은 백업 미포함 | `.tngd` 는 단일 JSON 통암호화(10MB 상한)라 파일을 담지 못한다. REPLACE_ALL 가져오기는 사진을 삭제하며 `settings_dialog_import_options` 에 경고가 있다 |
 | 사진 길게 눌러 삭제 = ✕ | `ui/attachments/AttachmentScreen.kt` (combinedClickable + ✕ 배지). 칩(⊖)과 달리 확인 창을 거친다 — 파일이 영구 삭제이기 때문 |
 | 이슈 이름·상태 변경 없음 | 생성 시 `status = "Active"` 고정(`ui/issue/IssueSelectViewModel.kt:77`), rename/status 변경 호출부 없음 |
@@ -79,5 +81,5 @@ UI 가 바뀌면 다시 촬영해야 한다. 순서:
    파일명은 문서의 `<img src>` 와 1:1 이므로 **이름을 바꾸지 말 것**.
 
 바디맵 이미지는 "한 기록에 여러 강도"를 보여주려고 허리를 7, 다리를 4로 칠한 것이다.
-처치 상세 이미지는 전후 6시간 규칙이 실제로 표시되는 사례를 골랐다. 다시 찍을 때도
+처치 상세 이미지는 전후 48시간 규칙이 실제로 표시되는 사례를 골랐다. 다시 찍을 때도
 같은 의도를 유지해야 캡션과 어긋나지 않는다.

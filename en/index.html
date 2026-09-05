@@ -279,7 +279,7 @@
   </div>
 
   <h3>How many the free tier holds</h3>
-  <p>The free tier stores <strong>3 photos per pain</strong>; Premium is unlimited. There is no "watch an ad to unlock" here — photos occupy storage permanently, so a one-day pass would not fit.</p>
+  <p>The free tier stores <strong>1 photo per pain</strong> without an ad; after that, <strong>one short ad adds one more photo</strong>, as many times as you need. Premium is unlimited and ad-free.</p>
   <p>Files larger than <strong>20MB</strong> are rejected. A phone photo of an imaging film is usually 3–8MB, so this rarely comes up.</p>
 
   <div class="note">
@@ -481,7 +481,7 @@
   <p>When the most-used treatment is not the most effective one, the app points that out. It means the treatment you reach for by habit may not be the one that works best for you.</p>
   <div class="note">
     <span class="label">What the effect score is</span>
-    <p>The reduction in pain after a treatment, <strong>divided among the treatments logged at the same time</strong>, accumulated across uses. If you took medication and applied heat together, they split that reduction. Treatments that were used often and consistently helped rise to the top.</p>
+    <p>The <strong>average drop</strong> in intensity from before a treatment to after it. A single before/after pair is credited to <strong>one treatment only — the earliest one</strong>, so two treatments never split the same pair. Treatments with several real reductions behind them rise to the top.</p>
   </div>
   <p>On the free tier, statistics cover the <strong>last 30 days</strong>; earlier periods unlock with Premium.</p>
 </section>
@@ -491,12 +491,12 @@
   <p>Tongda uses one simple, transparent rule. It is worth knowing so you can read the numbers correctly.</p>
   <h3>The rule</h3>
   <ol>
-    <li>Around each treatment, the pain record <strong>within the 6 hours before</strong> counts as "before" and the one <strong>within the 6 hours after</strong> counts as "after".</li>
+    <li>Around each treatment, the nearest pain record <strong>within the 48 hours before</strong> counts as "before" and the nearest one <strong>within the 48 hours after</strong> counts as "after".</li>
     <li>The difference between those two intensities is that treatment's change.</li>
-    <li>If several treatments were logged at the same time, the change is divided among them.</li>
+    <li>A before/after pair belongs to <strong>the earliest treatment</strong> inside it. Later treatments sharing that pair are not scored from it.</li>
     <li>Where multiple comparable cases exist, they are averaged.</li>
   </ol>
-  <p>If there is no pain record within 6 hours on either side, no effect is calculated and the app reports that there is nothing to compare.</p>
+  <p>Both sides must exist within 48 hours. If either is missing, the treatment shows "nothing to compare" instead of a score. The statistics screen, the report and the treatment detail screen all use this same rule.</p>
 
   <figure class="shot">
     <img src="../assets/img/en/10_treatment_detail.png" alt="Treatment detail screen showing before intensity 3, after intensity 2, and pain went down by 1" loading="lazy">
@@ -590,7 +590,8 @@
     <p>Appointments are short. Print the report or have the PDF open, and lead with two sections: <strong>Summary</strong> and <strong>Treatment Response</strong>. Bring up the rest only if questions come up.</p>
   </div>
   <p>The saved PDF is a single self-contained file: it opens without an internet connection and can be emailed or messaged as it is. Once saving finishes, <em>Open</em> takes you straight to it.</p>
-  <p>On the free tier, exporting may show a short rewarded ad. If the ad fails to load, the export proceeds anyway — an ad will never stand between you and your own data.</p>
+  <p>On the free tier, exporting may show a short rewarded ad — the same whether you start from Settings or from a pain's detail screen. If the ad fails to load, the export proceeds anyway; an ad will never stand between you and your own data. Premium has no ads.</p>
+  <p><strong>A free report covers the last 30 days</strong>, the same window the statistics screen uses. The report says so at the top, and Premium opens the whole history. A pain with nothing recorded in the last 30 days cannot be picked from the report list.</p>
 </section>
 
 <section id="backup">
@@ -635,26 +636,29 @@
 
 <section id="premium">
   <h2>Free limits and Premium</h2>
-  <p>Tongda is free to use, with ads and a few limits. Premium is a <strong>one-time purchase that lasts forever</strong> — not a subscription.</p>
+  <p>Tongda is free to use. <strong>There is no limit on recording itself</strong> — what the free tier limits is how far back you can look (statistics and reports) and a few extras. Premium is a <strong>one-time purchase that lasts forever</strong> — not a subscription.</p>
   <div class="tablewrap">
   <table>
     <thead><tr><th></th><th>Free</th><th>Premium</th></tr></thead>
     <tbody>
-      <tr><td>Pain records per day</td><td>Up to 3</td><td>Unlimited</td></tr>
-      <tr><td>Treatment records per day</td><td>Up to 3</td><td>Unlimited</td></tr>
+      <tr><td>Pain &amp; treatment records</td><td>Unlimited, no ads</td><td>Unlimited</td></tr>
       <tr><td>Pains tracked</td><td>2 (one ad per additional pain)</td><td>Unlimited</td></tr>
-      <tr><td>Photos</td><td>3 per pain</td><td>Unlimited</td></tr>
+      <tr><td>Photos</td><td>1 per pain (one ad per extra photo)</td><td>Unlimited</td></tr>
       <tr><td>Statistics history</td><td>Last 30 days</td><td>Entire history</td></tr>
-      <tr><td>Ads</td><td>Yes</td><td>None</td></tr>
+      <tr><td>Report period</td><td>Last 30 days (one ad per export)</td><td>Entire history</td></tr>
+      <tr><td>Backup export</td><td>One ad</td><td>No ad</td></tr>
+      <tr><td>Ads</td><td>Rewarded only, no banners</td><td>None</td></tr>
     </tbody>
   </table>
   </div>
-  <p>When you reach a daily limit, you are offered a choice: watch <strong>one short ad</strong> and that kind of record becomes unlimited for the rest of the day. Pain and treatment are counted separately, so an ad watched for pain does not lift the treatment limit. Limits reset at midnight.</p>
+  <p>Ads are <strong>rewarded ads only</strong> — there is no banner anywhere in the app. You meet one in four places: from the third pain onwards (one ad each), from the second photo on a pain onwards (one ad each), when exporting a report, and when exporting a backup file.</p>
+  <p>Saving a record never shows an ad. <strong>Write as many pain and treatment records a day as you like</strong> (before the September 2026 update there was a three-a-day limit).</p>
+  <p>When an ad cannot be loaded — in airplane mode, for instance — the action simply continues without one. Health records are never held behind an ad.</p>
   <h3>Purchase and restore</h3>
   <p>Buy from Settings → Premium. After changing devices or reinstalling, sign in with the <strong>same Google account</strong> and tap <em>Restore purchase</em>. If a payment is still processing, Premium activates automatically once it completes.</p>
   <div class="note">
     <span class="label">Your records are never removed</span>
-    <p>Free limits only affect how fast you can add new records. Nothing already saved is deleted or locked. The statistics window limits only what you can view — the data remains, and buying Premium opens the earlier periods exactly as they were recorded.</p>
+    <p>Nothing already saved is ever deleted or locked. The statistics and report windows limit <strong>viewing only</strong> — the data stays on your device, and buying Premium opens the earlier periods exactly as they were recorded.</p>
   </div>
 </section>
 
@@ -708,7 +712,7 @@
 
   <details>
     <summary>My statistics say there is not enough data.</summary>
-    <p>Trends and effectiveness need a minimum number of records. Effectiveness in particular requires a <strong>pain record within 6 hours before and after the treatment</strong> (<a href="#effect">how effectiveness is calculated</a>). Logging pain just before a treatment and again a few hours later fills this in quickly. Once three or more comparable cases exist, the low-confidence notice disappears.</p>
+    <p>Trends and effectiveness need a minimum number of records. Effectiveness in particular requires a <strong>pain record within 48 hours before and after the treatment</strong> (<a href="#effect">how effectiveness is calculated</a>). Logging pain just before a treatment and again a few hours later fills this in quickly. Once three or more comparable cases exist, the low-confidence notice disappears.</p>
   </details>
 
   <details>
