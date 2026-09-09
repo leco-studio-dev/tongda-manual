@@ -1,0 +1,84 @@
+{
+  "ko": {
+    "counts": {
+      "issues": 3,
+      "records": 146,
+      "treatments": 55
+    },
+    "scenarios": [
+      {
+        "name": "허리와 다리 · 일상 기록",
+        "records": 50,
+        "drawingDays": 38,
+        "multiRecordDays": 12,
+        "strokes": 248,
+        "start": "2026-06-19",
+        "end": "2026-09-09",
+        "distinctBrushSizes": 81
+      },
+      {
+        "name": "목·어깨 · 책상 작업",
+        "records": 48,
+        "drawingDays": 37,
+        "multiRecordDays": 11,
+        "strokes": 366,
+        "start": "2026-06-19",
+        "end": "2026-09-08",
+        "distinctBrushSizes": 48
+      },
+      {
+        "name": "무릎 · 활동 후 기록",
+        "records": 48,
+        "drawingDays": 37,
+        "multiRecordDays": 11,
+        "strokes": 168,
+        "start": "2026-06-19",
+        "end": "2026-09-08",
+        "distinctBrushSizes": 48
+      }
+    ],
+    "allStrokePointsInsideBodyMask": true,
+    "appExportMatchesFixture": true
+  },
+  "en": {
+    "counts": {
+      "issues": 3,
+      "records": 146,
+      "treatments": 55
+    },
+    "scenarios": [
+      {
+        "name": "Lower back & leg · daily life",
+        "records": 50,
+        "drawingDays": 38,
+        "multiRecordDays": 12,
+        "strokes": 248,
+        "start": "2026-06-19",
+        "end": "2026-09-09",
+        "distinctBrushSizes": 81
+      },
+      {
+        "name": "Neck & shoulders · desk work",
+        "records": 48,
+        "drawingDays": 37,
+        "multiRecordDays": 11,
+        "strokes": 366,
+        "start": "2026-06-19",
+        "end": "2026-09-08",
+        "distinctBrushSizes": 48
+      },
+      {
+        "name": "Knee · after activity",
+        "records": 48,
+        "drawingDays": 37,
+        "multiRecordDays": 11,
+        "strokes": 168,
+        "start": "2026-06-19",
+        "end": "2026-09-08",
+        "distinctBrushSizes": 48
+      }
+    ],
+    "allStrokePointsInsideBodyMask": true,
+    "appExportMatchesFixture": true
+  }
+}

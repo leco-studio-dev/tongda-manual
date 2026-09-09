@@ -1,0 +1,590 @@
+[
+  {
+    "language": "ko",
+    "file": "assets/img/ko/01_home.png",
+    "raw": "capture-record/ko/01_home.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "9ac78806b85ed0167e0e4bbeb0a30536fb64d98bacf429cbc416a784d6e983cd"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/02_issue_select.png",
+    "raw": "capture-record/ko/02_issue_select.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "bdf10e1665e8f450c4d4c166191b1bcbba021f2dea64031bff34ff2542f26502"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/03_record.png",
+    "raw": "capture-record/ko/03_record.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "13bc02c274715818944dbd932c1acfba3bec4031f41abe28a78edf1fa1592d93"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/04_bodymap.png",
+    "raw": "capture-record/ko/04_bodymap.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "8bf43f8c77fa708c459835199991c6575a8f83144041617d0cfbdd6c2abd013a"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/06_detail.png",
+    "raw": "capture-record/ko/06_detail.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "86d8135d1c47be982a4ac621ea802d5a98aa1b9f5b648c6cfcf73bf3bfd0d745"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/07_stats_month.png",
+    "raw": "capture-record/ko/07_stats_month.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "53194f5605dd9874794a2a31e35e57c035d4599b6c7c87fd6546e36e567a7db6"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/08_stats_trend.png",
+    "raw": "capture-record/ko/08_stats_trend.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "25bd30a310123ef6b107b467c3bd3246731283569e782a0826e484d2f86f7dc4"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/09_stats_day.png",
+    "raw": "capture-record/ko/09_stats_day.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "e7169c640942eeb5565d54e9df56ebc86885bbbac5e45bc7ce75531b84389292"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/11_settings_info.png",
+    "raw": "capture-record/ko/11_settings_info.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "5b79e5c41621b0f262bae0a99ac884295c85ce051ce325b91abfcb49949b7993"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/14_issue_wiggle.png",
+    "raw": "capture-record/ko/14_issue_wiggle.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "ddcb1375cc73435a9c4a33bab2742b742a24f534152876af01c3c7acd806c774"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/17_detail_actions.png",
+    "raw": "capture-record/ko/17_detail_actions.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "c8b86236abd75f5d949b162d363694a8df4e6de03bf57d7b6fa272a71f3d318f"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/24_stats_notice.png",
+    "raw": "capture-record/ko/24_stats_notice.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "75061e20fc7c09efabab1a48a24358844f9688207964435c7124949eebfef55e"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/25_tracking_free.png",
+    "raw": "capture-record/ko/25_tracking_free.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "d2e4b310a4be2aaea7dd917500fae5fd0737c20cf662dc9760f40f75079e768a"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/26_tracking_bodymaps.png",
+    "raw": "capture-record/ko/26_tracking_bodymaps.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "8a66654396b9d2cdfdb49f0c441b3f06db490a3e340873eea3b5e0a194f0e0d5"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/27_tracking_overlay.png",
+    "raw": "capture-record/ko/27_tracking_overlay.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "e36d7e638670ac784272954d7994f105e4527504342c5510420ad0daf96cc27b"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/28_issue_rename.png",
+    "raw": "capture-record/ko/28_issue_rename.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "f40e1310c7c93057563f6df539cafafc62b8260d4993a334271592659c619e6d"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/29_date_picker.png",
+    "raw": "capture-record/ko/29_date_picker.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "d7ae2b88ad84cdefcc47cedf4933b0bea5ffd3a23168923c189ac72c6dc4451f"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/30_time_picker.png",
+    "raw": "capture-record/ko/30_time_picker.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "02c7e46f2961a719f332311e770546e0a7555dfe8d3678410cdc3164da5192f9"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/31_report_period.png",
+    "raw": "capture-record/ko/31_report_period.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "aceb8690aa0e057e9be32e68d271d3b1cfa61a8c796c2294353f36a43d795ad0"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/32_period_picker.png",
+    "raw": "capture-record/ko/32_period_picker.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "db9097bb8fc8c254f4c2cae5406024ab76b2412ef85973877ec3ed9250478a59"
+  },
+  {
+    "language": "ko",
+    "file": "assets/img/ko/33_tracking_details.png",
+    "raw": "capture-record/ko/33_tracking_details.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "0f0f5b93e86a547e1942eec3e03466046e667e857f075b0fe97ac787af2698f1"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/01_home.png",
+    "raw": "capture-record/en/01_home.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "94fde2791770c31d6863e8848eb81f03ed96f47fd87b31bc6e8c84b587100bab"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/02_issue_select.png",
+    "raw": "capture-record/en/02_issue_select.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "82d92299098b5c8cb749b854b431bb34d1ff86d276a96f8e3ac9727dbad27644"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/03_record.png",
+    "raw": "capture-record/en/03_record.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "fbb9b8a5321dabaeaaabb37f7cbf357fc30da32fd4d75ecf35c04c7f3871acb9"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/04_bodymap.png",
+    "raw": "capture-record/en/04_bodymap.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "b8bb2599bfc96c56f07170ab92cca33034ada9c35e49b44cec78f32e9bca7811"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/06_detail.png",
+    "raw": "capture-record/en/06_detail.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "62e58392e6640b96195ae0e8c6843b70c3822f4451144617980853cdfff61441"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/07_stats_month.png",
+    "raw": "capture-record/en/07_stats_month.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "4bb0273baf43e7aa3cef42f86cda75b3283856f0a535874909458c15f04d17aa"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/08_stats_trend.png",
+    "raw": "capture-record/en/08_stats_trend.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "c3d565b29f59f3a48a1033667dd37d9cfb254f1ad972aeab7c1712bcd187a6b6"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/09_stats_day.png",
+    "raw": "capture-record/en/09_stats_day.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "74f8e70a2566f148d1ea974bf81d17b1248d891dca82d09b20a1ecc39a5e9527"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/11_settings_info.png",
+    "raw": "capture-record/en/11_settings_info.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "e38cefc374587708341a307d168e6af01cdf5152f2321de71ae15689cddfe5be"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/14_issue_wiggle.png",
+    "raw": "capture-record/en/14_issue_wiggle.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "a196fef8f0d05f7df58d003635cb45b6890dc6ad0386d6ba6e4b342c1c1c90ac"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/17_detail_actions.png",
+    "raw": "capture-record/en/17_detail_actions.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "01dedc3af2456650cc934359ec996be434c5897d640c1c011455a2fcf394b3fc"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/24_stats_notice.png",
+    "raw": "capture-record/en/24_stats_notice.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "de8d370086889ee10902fe3e7ffcd7a4af65b9a2b615bf3ce98c977786032e48"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/25_tracking_free.png",
+    "raw": "capture-record/en/25_tracking_free.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "26c8d2c238f6a7e586197fd17ceabeab3006c4fe44608218fed8c097a080a9f7"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/26_tracking_bodymaps.png",
+    "raw": "capture-record/en/26_tracking_bodymaps.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "64b440767cedf1cd06492e4b945c897cd32f3c72398cc7bd7e21cbc85b66ca5b"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/27_tracking_overlay.png",
+    "raw": "capture-record/en/27_tracking_overlay.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "a74110730b16d6c8e0291764a2fa9fb48ff3df7ec5b5d4dd76bb1e20461f24e4"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/28_issue_rename.png",
+    "raw": "capture-record/en/28_issue_rename.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "558fda1e5cbe47e3eaeb6bde413243d4da571f04d9c1ba14d75d4f8478c943b7"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/29_date_picker.png",
+    "raw": "capture-record/en/29_date_picker.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "17280bbab802e5273afa79f0db9ef74a4a50f0774ad6159a981ce3ac5d3047ab"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/30_time_picker.png",
+    "raw": "capture-record/en/30_time_picker.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "9b4ce7db2d39fdb121fd4bdb869f66aef9080b779ec0d9d6e228a3d170492cf8"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/31_report_period.png",
+    "raw": "capture-record/en/31_report_period.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "97466f546bc8b9ed952cf28eab6ce8487603c3ee19bc6828b621f8b313f96276"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/32_period_picker.png",
+    "raw": "capture-record/en/32_period_picker.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "3fc1d4ab57aee1bf5247467e7be8d6601921e988fa4ccea8c68e2f24337bc4ed"
+  },
+  {
+    "language": "en",
+    "file": "assets/img/en/33_tracking_details.png",
+    "raw": "capture-record/en/33_tracking_details.png",
+    "rawSize": [
+      1080,
+      2400
+    ],
+    "webSize": [
+      648,
+      1440
+    ],
+    "sha256": "86914319234fb81107ba61e589493223e7b39542e2c44f9a14724130b4e149e0"
+  }
+]

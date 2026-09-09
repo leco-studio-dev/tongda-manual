@@ -1,0 +1,13 @@
+{
+  "appHead": "1935b680f9b11d90d6b33bec3848b7f4865e3bc2",
+  "appRemoteHead": "cada1b754466f1dc392d8f712fec06417af8a328",
+  "appTrackedWorktreeClean": true,
+  "appIndexClean": true,
+  "appRemoteIsAncestor": true,
+  "appUntrackedFileCount": 45,
+  "manualHead": "d050022f48e95f9081d1768b2b21e7ccab19d743",
+  "manualBehindAhead": "0\t1",
+  "committed": false,
+  "pushed": false,
+  "deployed": false
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-09",
+  "method": "Actual connected-browser rendering of local HTTP pages; read-only DOM measurements and visual inspection",
+  "viewports": [
+    {
+      "language": "ko",
+      "width": 390,
+      "height": 844,
+      "documentScrollWidth": 375,
+      "horizontalOverflow": false
+    },
+    {
+      "language": "ko",
+      "width": 1280,
+      "height": 900,
+      "documentScrollWidth": 1265,
+      "horizontalOverflow": false
+    },
+    {
+      "language": "en",
+      "width": 390,
+      "height": 844,
+      "documentScrollWidth": 375,
+      "horizontalOverflow": false
+    },
+    {
+      "language": "en",
+      "width": 1280,
+      "height": 900,
+      "documentScrollWidth": 1265,
+      "horizontalOverflow": false
+    }
+  ],
+  "images": {
+    "ko": {
+      "total": 33,
+      "loadedAfterVisitingEveryFigure": 33,
+      "broken": []
+    },
+    "en": {
+      "total": 33,
+      "loadedAfterVisitingEveryFigure": 33,
+      "broken": []
+    }
+  },
+  "visualChecks": [
+    "Both languages: heading/body layout and captions",
+    "Day, Month, Tracking are distinct selected-issue screens",
+    "Marked extent flow and previous/current body maps",
+    "Pain management and rename",
+    "Report/date range selection"
+  ],
+  "correction": "Added intrinsic image dimensions to prevent lazy-loaded images shifting anchor destinations; rechecked afterward",
+  "viewportOverrideReset": true
+}

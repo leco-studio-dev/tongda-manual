@@ -51,7 +51,7 @@
 
 <div class="hero">
   <h1>Tongda User Manual</h1>
-  <p>Tongda is a pain diary for tracking chronic pain and finding out — from your own records — which treatments actually helped. This manual walks through every feature in the order you meet it in the app.</p>
+  <p>Tongda is a pain diary for tracking chronic pain and reviewing changes around treatments in your own records. This manual walks through every feature in the order you meet it in the app.</p>
   <div class="chips">
     <a class="chip" href="#quickstart">First steps</a>
     <a class="chip" href="#bodymap">Body map</a>
@@ -62,7 +62,7 @@
     <a class="chip" href="#faq">Notifications not arriving</a>
   </div>
 </div>
-
+<p class="caption">Screens contain synthetic examples. Some unchanged features retain earlier captures; layout can vary with device and text size.</p>
 <section id="intro">
   <h2>What Tongda is for</h2>
   <p>Pain is hard to remember accurately. "Is it better than last month?" is difficult to answer honestly, and judgments about which medication or therapy helped end up resting on impressions. Tongda exists to close that gap.</p>
@@ -77,7 +77,7 @@
 
 <section id="quickstart">
   <h2>Get started in 3 minutes</h2>
-  <p>Every record in Tongda belongs to a <strong>pain</strong> — a named condition you want to track, such as "Lower back pain" or "Migraine". So the first step is creating one.</p>
+  <p>New pain and treatment entries are saved under a selected <strong>pain</strong> — a named condition you want to track, such as "Lower back pain" or "Migraine". So the first step is creating one.</p>
   <ol class="steps">
     <li><b>Tap <em>Log Pain</em> on the home screen</b>It is in the quick-record area.</li>
     <li><b>On the Select Pain screen, tap <em>+</em> to add one</b>Be specific enough to recognise later — for example "Right shoulder pain" or "Knee pain (stairs)".</li>
@@ -88,11 +88,11 @@
   </ol>
   <div class="shots">
     <figure class="shot">
-      <img src="../assets/img/en/01_home.png" alt="Tongda home screen with recent pain card and quick record tiles" loading="lazy">
+      <img src="../assets/img/en/01_home.png" alt="Tongda home screen with recent pain card and quick record tiles" loading="lazy" width="648" height="1440">
       <figcaption><b>Home</b> — recent pain and treatment as cards, with <em>Quick Record</em> below to start straight away.</figcaption>
     </figure>
     <figure class="shot">
-      <img src="../assets/img/en/02_issue_select.png" alt="Select Pain screen listing tracked pains with an add button" loading="lazy">
+      <img src="../assets/img/en/02_issue_select.png" alt="Select Pain screen listing tracked pains with an add button" loading="lazy" width="648" height="1440">
       <figcaption><b>Select Pain</b> — pick what you are tracking, or create a new one with <em>+</em> at the bottom right.</figcaption>
     </figure>
   </div>
@@ -107,14 +107,15 @@
   <p>Start from <em>Log Pain</em> on the home screen or from the bottom tab bar. The screen has four parts.</p>
 
   <figure class="shot">
-    <img src="../assets/img/en/03_record.png" alt="Log Pain screen showing date and time, body map, symptom types and save button" loading="lazy">
-    <figcaption><b>Log Pain</b> — from the top: date and time, mark where it hurts, symptom type, then the note.</figcaption>
+    <img src="../assets/img/en/03_record.png" alt="Log Pain screen showing date and time, body map, symptom types and save button" loading="lazy" width="648" height="1440">
+    <figcaption><b>Edit Pain Record example</b> — from the top: date and time, mark where it hurts, symptom type, then the note.</figcaption>
   </figure>
 
   <h3>Date and time</h3>
   <p>Defaults to now. If the episode was earlier, tap to change it. Time-of-day patterns in Pain Analysis are calculated from this value, so entering the time it actually hurt keeps the analysis accurate.</p>
 
-  <h3>Mark where it hurts</h3>
+  <p>Tap the date and time separately. Choose a date in the calendar, or hours and minutes on the clock, then confirm. Cancel keeps the previous value. Pain and treatment entries use the same controls.</p><div class="shots"><figure class="shot"><img src="../assets/img/en/29_date_picker.png" alt="Select the record date" loading="lazy" width="648" height="1440"><figcaption>Select the record date</figcaption></figure><figure class="shot"><img src="../assets/img/en/30_time_picker.png" alt="Select the record time" loading="lazy" width="648" height="1440"><figcaption>Select the record time</figcaption></figure></div>
+<h3>Mark where it hurts</h3>
   <p>Tap <em>Edit</em> to open the body map editor. You can save without drawing, but drawing enables the area comparison and spread-over-time views in the report. Controls are in <a href="#bodymap">the next chapter</a>.</p>
 
   <h3>Symptom type</h3>
@@ -138,8 +139,8 @@
   <p>The body map lets you paint the painful areas onto a body outline. Front and back are separate views you can switch between and record independently.</p>
 
   <figure class="shot">
-    <img src="../assets/img/en/04_bodymap.png" alt="Body map editor with the lower back painted at intensity 7 and the leg at intensity 4" loading="lazy">
-    <figcaption><b>Edit Pain Area</b> — areas within one record can carry different intensities. Here the lower back is painted at 7 (deeper colour) and numbness running down the leg at 4 (lighter).</figcaption>
+    <img src="../assets/img/en/04_bodymap.png" alt="Body map editor with the lower back marked at intensity 5 and the posterior thigh at intensity 3" loading="lazy" width="648" height="1440">
+    <figcaption><b>Edit Pain Area</b> — areas within one record can carry different intensities. Here the lower back is marked at intensity 5 and the back of the thigh at 3.</figcaption>
   </figure>
 
   <h3>Three tools</h3>
@@ -182,7 +183,7 @@
   </ul>
   <div class="note">
     <span class="label">Note</span>
-    <p>The "spread" figure in reports is approximated from the length of your strokes and the brush width — it is not a measured surface area. Keeping the brush size roughly consistent for the same condition makes period-to-period comparison more meaningful.</p>
+    <p>Marked extent is the union of painted areas inside the front and back body silhouettes. Overlapping marks count once, and marks outside the body are excluded. The percentage describes coverage of the body map, not physical body area or a medical measurement. Use a consistent brush size and recording approach when comparing periods.</p>
   </div>
 </section>
 
@@ -196,7 +197,7 @@
     <li><b>Save</b></li>
   </ol>
   <figure class="shot">
-    <img src="../assets/img/en/05_treatment.png" alt="Log Treatment screen with a pain selected and Ibuprofen picked from the medication category" loading="lazy">
+    <img src="../assets/img/en/05_treatment.png" alt="Log Treatment screen with a pain selected and Ibuprofen picked from the medication category" loading="lazy" width="324" height="720">
     <figcaption><b>Log Treatment</b> — choose the pain first, then expand a category and pick the item.</figcaption>
   </figure>
   <div class="tip">
@@ -228,11 +229,11 @@
 
   <div class="shots">
     <figure class="shot">
-      <img src="../assets/img/en/20_att_card.png" alt="Photos card on the pain detail screen with three thumbnails and a count" loading="lazy">
+      <img src="../assets/img/en/20_att_card.png" alt="Photos card on the pain detail screen with three thumbnails and a count" loading="lazy" width="324" height="720">
       <figcaption><b>The Photos card</b> — below the body map on a pain's detail screen. Tap it to open the library.</figcaption>
     </figure>
     <figure class="shot">
-      <img src="../assets/img/en/21_att_grid.png" alt="Photo library grid with a label and date under each photo" loading="lazy">
+      <img src="../assets/img/en/21_att_grid.png" alt="Photo library grid with a label and date under each photo" loading="lazy" width="324" height="720">
       <figcaption><b>The library</b> — each photo carries a label and a date. <em>+</em> at the bottom right adds more.</figcaption>
     </figure>
   </div>
@@ -261,8 +262,8 @@
   </ul>
 
   <figure class="shot">
-    <img src="../assets/img/en/22_att_wiggle.png" alt="Photo library after a long press — an X badge on each photo and Done in the top bar" loading="lazy">
-    <figcaption><b>After the long press</b> — identical to deleting a pain card. While the photos wiggle, the first tap closes the mode instead of opening a photo.</figcaption>
+    <img src="../assets/img/en/22_att_wiggle.png" alt="Photo library after a long press — an X badge on each photo and Done in the top bar" loading="lazy" width="324" height="720">
+    <figcaption><b>After the long press</b> — each photo gets a delete badge. While the photos wiggle, the first tap closes the mode instead of opening a photo.</figcaption>
   </figure>
 
   <div class="warn">
@@ -298,7 +299,7 @@
     <tbody>
       <tr><td>A single pain record</td><td>Detail view → ✏️ in the top bar</td><td>Detail view → 🗑 in the top bar</td></tr>
       <tr><td>A single treatment record</td><td>Treatment detail → <em>Edit</em></td><td>Treatment detail → <em>Delete</em></td></tr>
-      <tr><td>A pain</td><td>Renaming and changing status are not supported</td><td>Select Pain → <strong>long-press</strong> → ✕</td></tr>
+      <tr><td>A pain</td><td>Long-press the pain card → Manage Pain → Edit (rename); status changes are not supported</td><td>Select Pain → <strong>long-press</strong> → Manage Pain → Delete → confirm</td></tr>
       <tr><td>Symptom / treatment items</td><td>No renaming (create a new one)</td><td><strong>Long-press</strong> the chip → ⊖</td></tr>
       <tr><td>A photo</td><td>Edit its label with ✏️ in full screen</td><td><strong>Long-press</strong> in the library → ✕, or 🗑 in full screen</td></tr>
     </tbody>
@@ -311,7 +312,7 @@
   <table>
     <thead><tr><th>Screen</th><th>What you long-press</th><th>Badge</th><th>What wiggles</th><th>To finish</th></tr></thead>
     <tbody>
-      <tr><td><strong>Select Pain</strong></td><td>A pain card</td><td>✕</td><td>Every card</td><td><em>Done</em> in the top bar</td></tr>
+      <tr><td><strong>Select Pain</strong></td><td>A pain card</td><td>Manage Pain: rename / delete</td><td>Every card</td><td><em>Done</em> in the top bar</td></tr>
       <tr><td><strong>Log Pain</strong></td><td>A symptom-type chip</td><td>⊖</td><td>That chip's category only</td><td><em>Done</em> by the category</td></tr>
       <tr><td><strong>Log Treatment</strong></td><td>A treatment-item chip</td><td>⊖</td><td>That chip's category only</td><td><em>Done</em> by the category</td></tr>
       <tr><td><strong>Photos</strong></td><td>A photo tile</td><td>✕</td><td>Every photo</td><td><em>Done</em> in the top bar</td></tr>
@@ -323,17 +324,17 @@
   <h3>A single pain record</h3>
   <ol class="steps">
     <li><b>Open the record</b>Tap a pain record in the <em>Records</em> tab, or the <em>Recent Pain</em> card on the home screen. The detail view opens.</li>
-    <li><b>Use the icons in the top bar</b>📄 report · ✏️ edit · 🗑 delete — all three act on <strong>the record currently on screen</strong>.</li>
-    <li><b>Use ← → to move between records</b>A counter under the title shows where you are, such as <em>1 / 60</em>. Edit and delete then apply to <strong>whichever record you moved to</strong>, so check the date and intensity on screen before deleting.</li>
+    <li><b>Use the icons in the top bar</b>📄 report · ✏️ edit · 🗑 delete — report exports a selected period for this pain; edit and delete act on <strong>the record currently on screen</strong>.</li>
+    <li><b>Use ← → to move between records</b>A counter under the title shows where you are, such as <em>1 / 50</em>. Edit and delete then apply to <strong>whichever record you moved to</strong>, so check the date and intensity on screen before deleting.</li>
   </ol>
 
   <div class="shots">
     <figure class="shot">
-      <img src="../assets/img/en/17_detail_actions.png" alt="Detail view top bar with report, edit and delete icons above a 1/60 record pager" loading="lazy">
-      <figcaption><b>Detail view</b> — the three icons at the top right act on the <strong>record currently shown</strong>, numbered <em>1 / 60</em> here.</figcaption>
+      <img src="../assets/img/en/17_detail_actions.png" alt="Detail view top bar with report, edit and delete icons above a 1/50 record pager" loading="lazy" width="648" height="1440">
+      <figcaption><b>Detail view</b> — edit and delete act on the current record, numbered <em>1 / 50</em> here; report exports a period for this pain.</figcaption>
     </figure>
     <figure class="shot">
-      <img src="../assets/img/en/18_edit_warn.png" alt="Save changes to this record? warning dialog" loading="lazy">
+      <img src="../assets/img/en/18_edit_warn.png" alt="Save changes to this record? warning dialog" loading="lazy" width="324" height="720">
       <figcaption><b>Saving an edit</b> — a warning explains that statistics may change; you tap <em>Save</em> here to apply it.</figcaption>
     </figure>
   </div>
@@ -348,31 +349,8 @@
     <p>Editing or deleting a pain or treatment record <strong>also changes the treatment-effectiveness results</strong> in your statistics and reports. Effectiveness is computed by comparing the pain records around each treatment (see <a href="#effect">how effectiveness is calculated</a>), so changing one record changes how that treatment is scored. That is why the app warns you before saving.</p>
   </div>
 
-  <h3>Deleting a pain — long-press</h3>
-  <ol class="steps">
-    <li><b>Open the Select Pain screen</b>It is the screen you get from <em>Log Pain</em> on the home screen.</li>
-    <li><b>Long-press a pain card</b>A red <strong>✕</strong> badge appears at the top right of every card, and <em>Done</em> appears in the top bar.</li>
-    <li><b>Tap ✕ on the one you want gone</b>A confirmation dialog appears; it is only deleted once you tap <em>Delete</em> there. Read the warning in that dialog first.</li>
-    <li><b>To back out without deleting</b><em>Done</em> in the top bar, the <em>←</em> arrow, the device back gesture, or <strong>a single tap on any card</strong> — all four just exit wiggle mode. While the cards wiggle, that first tap is not treated as a selection, so you will not accidentally open the logging screen.</li>
-  </ol>
-
-  <div class="shots">
-    <figure class="shot">
-      <img src="../assets/img/en/14_issue_wiggle.png" alt="Select Pain screen in wiggle mode — a red X badge on each card and Done in the top bar" loading="lazy">
-      <figcaption><b>After the long press</b> — each card gets an <strong>✕</strong> and <em>Done</em> appears in the top bar.</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="../assets/img/en/15_issue_delete_confirm.png" alt="Delete Pain confirmation dialog warning that all linked records will be deleted" loading="lazy">
-      <figcaption><b>The confirmation dialog</b> — it spells out that <strong>every record and treatment linked to this pain</strong> goes with it.</figcaption>
-    </figure>
-  </div>
-  <div class="warn">
-    <span class="label">Warning</span>
-    <p>Deleting a pain <strong>also deletes every pain record and treatment record attached to it</strong>. This cannot be undone.</p>
-    <p>If a condition has resolved and you simply will not log it any more, <strong>leave it in place.</strong> A pain sitting in the list costs you nothing, and if the same problem returns you can read the old history alongside the new. Deleting is best reserved for entries you created by mistake.</p>
-  </div>
-
-  <h3>Tidying symptom and treatment items — long-press</h3>
+  <h3>Managing a pain — rename or delete</h3><ol class="steps"><li><b>Open Select Pain</b>From Home → Log Pain, long-press a pain card to open Manage Pain.</li><li><b>Choose Edit (rename)</b>Enter a new name and confirm. A blank or unchanged name cannot be saved. Linked records are preserved.</li><li><b>Confirm deletion separately</b>Delete opens a confirmation. Confirming deletes the pain and its linked pain records, treatments, and photos. This cannot be undone.</li><li><b>Cancel and finish</b>Cancel closes the dialog. Done or Back leaves card management mode.</li></ol><div class="shots"><figure class="shot"><img src="../assets/img/en/14_issue_wiggle.png" alt="Manage Pain — choose rename or delete." loading="lazy" width="648" height="1440"><figcaption>Manage Pain — choose rename or delete.</figcaption></figure><figure class="shot"><img src="../assets/img/en/28_issue_rename.png" alt="Rename Pain — change the name while keeping its records." loading="lazy" width="648" height="1440"><figcaption>Rename Pain — change the name while keeping its records.</figcaption></figure><figure class="shot"><img src="../assets/img/en/15_issue_delete_confirm.png" alt="Deletion requires confirmation because linked records are removed." loading="lazy" width="324" height="720"><figcaption>Deletion requires confirmation because linked records are removed.</figcaption></figure></div>
+<h3>Tidying symptom and treatment items — long-press</h3>
   <p>The chips behave identically on both screens.</p>
   <ul>
     <li>The <em>Symptom Type</em> chips on the <strong>Log Pain</strong> screen — sensations such as "Tingling" or "Stiff"</li>
@@ -381,11 +359,11 @@
 
   <div class="shots">
     <figure class="shot">
-      <img src="../assets/img/en/19_symptom_wiggle.png" alt="Log Pain screen with ⊖ badges only on the Nerve sensations chips and Done by the category" loading="lazy">
+      <img src="../assets/img/en/19_symptom_wiggle.png" alt="Log Pain screen with ⊖ badges only on the Nerve sensations chips and Done by the category" loading="lazy" width="324" height="720">
       <figcaption><b>Symptom-type chips</b> — only <em>Nerve sensations</em> wiggles; the categories below it are untouched.</figcaption>
     </figure>
     <figure class="shot">
-      <img src="../assets/img/en/16_chip_wiggle.png" alt="Log Treatment screen with ⊖ badges only on the medication category chips" loading="lazy">
+      <img src="../assets/img/en/16_chip_wiggle.png" alt="Log Treatment screen with ⊖ badges only on the medication category chips" loading="lazy" width="324" height="720">
       <figcaption><b>Treatment-item chips</b> — likewise only <em>Medication</em> wiggles, while <em>Therapy</em>, <em>Exercise</em> and <em>Food</em> stay as they are.</figcaption>
     </figure>
   </div>
@@ -424,7 +402,7 @@
   <p>The <em>Records</em> tab at the bottom. Filter by <strong>All / Pain / Treatment</strong>, and use the search field to search <strong>notes and treatment names</strong>. Searching "injection" finds the injection treatments; searching a word you used in a note finds those pain records.</p>
 
   <figure class="shot">
-    <img src="../assets/img/en/06_list.png" alt="Records list with All, Pain and Treatment tabs, a search field and chronological entries" loading="lazy">
+    <img src="../assets/img/en/06_list.png" alt="Records list with All, Pain and Treatment tabs, a search field and chronological entries" loading="lazy" width="324" height="720">
     <figcaption><b>Records</b> — filter by pain, split by type with the tabs, and search your notes.</figcaption>
   </figure>
 
@@ -436,54 +414,12 @@
     <li><strong>Last treatment</strong> — for each pain record, the most recent treatment before it and how long before (within 1 hour / N hours ago / N days ago)</li>
   </ul>
   <p>The detail screen is for per-entry history; aggregated figures and charts live in <a href="#stats">Pain Analysis</a>.</p>
+<figure class="shot"><img src="../assets/img/en/06_detail.png" alt="Saved pain drawing — review the actual strokes and intensity in Details." loading="lazy" width="648" height="1440"><figcaption>Saved pain drawing — review the actual strokes and intensity in Details.</figcaption></figure>
 </section>
 
 <section id="stats">
-  <h2>Pain Analysis</h2>
-  <p>The <em>Stats</em> tab at the bottom. Choose which pain to analyse and its screen opens.</p>
-
-  <div class="shots">
-    <figure class="shot">
-      <img src="../assets/img/en/07_stats_month.png" alt="Pain Analysis month view with better and worse cards and the pain calendar" loading="lazy">
-      <figcaption><b>Month</b> — better/worse summary cards and the Pain Calendar coloured by intensity.</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="../assets/img/en/08_stats_trend.png" alt="Pain Trend Graph with treatment days marked and the effectiveness summary below" loading="lazy">
-      <figcaption><b>Trend graph</b> — daily average intensity with treatment days on top; scroll on for the effectiveness summary.</figcaption>
-    </figure>
-    <figure class="shot">
-      <img src="../assets/img/en/09_stats_day.png" alt="Pain Analysis day view showing pain by hour and the detailed records for that day" loading="lazy">
-      <figcaption><b>Day</b> — that day's pain by hour and treatment times. Swipe left or right to change date.</figcaption>
-    </figure>
-  </div>
-
-  <h3>Period</h3>
-  <p>Switch between <strong>Day</strong> and <strong>Month</strong>. In Day view, swipe left and right to move between dates.</p>
-
-  <h3>Pain by Hour</h3>
-  <p>Compares average intensity across morning, afternoon, evening and night. If pain clusters in one window, that is a concrete basis for adjusting routines or dosing times.</p>
-
-  <h3>Pain Calendar</h3>
-  <p>A month grid coloured by intensity. Days without records stay empty. Tap a day to see its records below.</p>
-
-  <h3>Pain Trend Graph</h3>
-  <p>Daily average intensity as a line, with the days you had treatment marked on top. Choose <strong>30 days / All / Custom range</strong>. Where the line falls in a stretch dense with treatment markers, that period is worth a closer look.</p>
-
-  <h3>This month's insights</h3>
-  <p>Plain-language summaries of your records — for example "Pain has been easing off recently" or "Average pain fell from 6.4 to 4.1 after treatment". When there is too little data, the app says so instead of asserting a trend.</p>
-
-  <h3>Treatment effectiveness</h3>
-  <ul>
-    <li><strong>Most Effective Treatment</strong> — with use count, average before, and average after.</li>
-    <li><strong>Top 3 Most-Used Treatments</strong> — by count, which can differ from the effectiveness ranking.</li>
-    <li><strong>Overall Treatment Effectiveness</strong> — ranked by effect score.</li>
-  </ul>
-  <p>When the most-used treatment is not the most effective one, the app points that out. It means the treatment you reach for by habit may not be the one that works best for you.</p>
-  <div class="note">
-    <span class="label">What the effect score is</span>
-    <p>The <strong>average drop</strong> in intensity from before a treatment to after it. A single before/after pair is credited to <strong>one treatment only — the earliest one</strong>, so two treatments never split the same pair. Treatments with several real reductions behind them rise to the top.</p>
-  </div>
-  <p>On the free tier, statistics cover the <strong>last 30 days</strong>; earlier periods unlock with Premium.</p>
+<h2>Pain Analysis</h2><p>Open Stats, select a pain, and switch between <strong>Day · Month · Tracking</strong>. Screens below contain synthetic examples.</p><div class="shots"><figure class="shot"><img src="../assets/img/en/09_stats_day.png" alt="Day — multiple pain entries and treatment times on one date" loading="lazy" width="648" height="1440"><figcaption>Day — multiple pain entries and treatment times on one date</figcaption></figure><figure class="shot"><img src="../assets/img/en/07_stats_month.png" alt="Month — two change cards and a calendar of daily peak intensity" loading="lazy" width="648" height="1440"><figcaption>Month — two change cards and a calendar of daily peak intensity</figcaption></figure><figure class="shot"><img src="../assets/img/en/08_stats_trend.png" alt="Tracking · Premium — compare with the immediately preceding equal-length period" loading="lazy" width="648" height="1440"><figcaption>Tracking · Premium — compare with the immediately preceding equal-length period</figcaption></figure></div><h3>Day and Month</h3><p>Select a date or swipe in Day view to review the timing of entries. The circular chart shows the peak recorded intensity in each hour. An unrecorded time does not mean zero pain. The monthly calendar shows each date's peak intensity and leaves unrecorded days blank. Tap a date to review its entries.</p><p><strong>Now vs. this month's worst</strong> compares the highest daily peak with the latest recorded day's peak. <strong>Worst vs. this month's best</strong> is the difference between the highest and lowest daily peaks. At least two recorded days are needed. These cards use a different basis from the daily-average trend graph.</p>
+<h3>Tracking periods and the free summary</h3><p>The default is the last 30 days. <strong>Custom</strong> lets Premium users choose a start and end date. The comparison uses the immediately preceding period of equal length. If the previous period is outside free access, the current summary, extent flow, and current body map remain available. Inaccessible history does not mean missing records. An accessible period with no entries has a separate no-record message.</p><figure class="shot"><img src="../assets/img/en/25_tracking_free.png" alt="Free Tracking — current-period summary" loading="lazy" width="648" height="1440"><figcaption>Free Tracking — current-period summary</figcaption></figure><h3>How the figures are calculated</h3><ul><li><strong>Average recorded pain intensity:</strong> average the valid entries on each date, then average those daily means. A day with more entries does not receive more weight.</li><li><strong>Body-map marked extent:</strong> take the widest marked record on each date, then average those daily maxima. Overlapping strokes count once inside the front and back silhouettes.</li><li><strong>Show details:</strong> reveals peak intensity, extent difference in percentage points (%p), recorded days, intensity days, body-map days, and days used for extent. Percentage points are the difference between two percentages.</li></ul><p>No records, missing intensity, no body map, and unavailable calculations are not zero. Each metric uses its valid entries. Recording frequency affects interpretation. Statistics and reports share calculation functions; compare them using the same period and accessible history.</p><figure class="shot"><img src="../assets/img/en/33_tracking_details.png" alt="Show details — valid record days and calculation basis" loading="lazy" width="648" height="1440"><figcaption>Show details — valid record days and calculation basis</figcaption></figure><h3>Extent flow and before/after maps</h3><p>Open <strong>Marked Extent Over Time → Expand</strong> to see daily maximum extent. Dates without a drawing are excluded from its average. Lines join recorded points; they do not measure the state on unrecorded dates.</p><p><strong>Marked Location Comparison</strong> shows the <strong>last valid drawing in each period</strong>, rather than the average or widest drawing. Its basis differs from the average extent above.</p><figure class="shot"><img src="../assets/img/en/26_tracking_bodymaps.png" alt="Premium — daily extent changes and previous/current body maps" loading="lazy" width="648" height="1440"><figcaption>Premium — daily extent changes and previous/current body maps</figcaption></figure><p>In <strong>Overlay · show details</strong>, grey means marked in both records, orange/brown means current only, and green means previous only. These colours describe drawing differences and do not diagnose worsening or recovery.</p><figure class="shot"><img src="../assets/img/en/27_tracking_overlay.png" alt="Overlay — both records / current only / previous only" loading="lazy" width="648" height="1440"><figcaption>Overlay — both records / current only / previous only</figcaption></figure><h3>Monthly insights and treatment records</h3><p>Insights and rankings summarise entered records. Frequency rankings can differ from average before/after intensity reductions. See <a href="#effect">how treatment effectiveness is calculated</a> for its time window and pairing rules. These figures do not establish causation or treatment efficacy.</p>
 </section>
 
 <section id="effect">
@@ -496,10 +432,10 @@
     <li>A before/after pair belongs to <strong>the earliest treatment</strong> inside it. Later treatments sharing that pair are not scored from it.</li>
     <li>Where multiple comparable cases exist, they are averaged.</li>
   </ol>
-  <p>Both sides must exist within 48 hours. If either is missing, the treatment shows "nothing to compare" instead of a score. The statistics screen, the report and the treatment detail screen all use this same rule.</p>
+  <p>Both sides must exist within 48 hours. If either is missing, the treatment shows "nothing to compare" instead of a score. Statistics, reports, and treatment detail share this rule; selected periods and accessible records can differ, so results may differ too.</p>
 
   <figure class="shot">
-    <img src="../assets/img/en/10_treatment_detail.png" alt="Treatment detail screen showing before intensity 3, after intensity 2, and pain went down by 1" loading="lazy">
+    <img src="../assets/img/en/10_treatment_detail.png" alt="Treatment detail screen showing before intensity 3, after intensity 2, and pain went down by 1" loading="lazy" width="324" height="720">
     <figcaption><b>Treatment Detail</b> — the rule in plain sight: it names the before record (3) and the after record (2), summarises the difference, and states that this is a logged change rather than causation.</figcaption>
   </figure>
   <div class="warn">
@@ -528,11 +464,11 @@
   </ol>
   <div class="shots">
     <figure class="shot">
-      <img src="../assets/img/en/12_notif_editor.png" alt="Add Notification sheet with type, trigger and day options" loading="lazy">
+      <img src="../assets/img/en/12_notif_editor.png" alt="Add Notification sheet with type, trigger and day options" loading="lazy" width="324" height="720">
       <figcaption><b>Add Notification</b> — choose the type (pain or treatment), the trigger (time or interval), and the days.</figcaption>
     </figure>
     <figure class="shot">
-      <img src="../assets/img/en/13_notif_list.png" alt="Notifications list showing a 09:00 daily pain reminder with its next fire time" loading="lazy">
+      <img src="../assets/img/en/13_notif_list.png" alt="Notifications list showing a 09:00 daily pain reminder with its next fire time" loading="lazy" width="324" height="720">
       <figcaption><b>Notifications</b> — after saving, the <em>Next</em> time is shown so you can confirm the setting is right.</figcaption>
     </figure>
   </div>
@@ -568,9 +504,10 @@
 
 <section id="report">
   <h2>Exporting a report</h2>
-  <p>This produces a document to bring to an appointment. Go to Settings → Report → <em>Export Report</em>, or start from a pain's detail screen. Pick the pain, choose where to save, and the report is written as a <strong>PDF file</strong>.</p>
+  <p>In Settings → Export Report, choose <strong>All dates</strong> or <strong>Choose dates</strong>. For a selected range, confirm its start and end. In either case, select a pain next and choose a save location to create the PDF. The report icon in pain details saves the full available range for the current pain, without a date-range selection step. Tap the icon, then choose a save location.</p>
 
-  <h3>What the report contains</h3>
+  <div class="shots"><figure class="shot"><img src="../assets/img/en/31_report_period.png" alt="Report — confirm the period, then select a pain" loading="lazy" width="648" height="1440"><figcaption>Report — confirm the period, then select a pain</figcaption></figure><figure class="shot"><img src="../assets/img/en/32_period_picker.png" alt="Date range — choose the start and end" loading="lazy" width="648" height="1440"><figcaption>Date range — choose the start and end</figcaption></figure></div>
+<h3>What the report contains</h3>
   <div class="tablewrap">
   <table>
     <thead><tr><th>Section</th><th>Contents</th></tr></thead>
@@ -592,7 +529,7 @@
   <p>The saved PDF is a single self-contained file: it opens without an internet connection and can be emailed or messaged as it is. Once saving finishes, <em>Open</em> takes you straight to it.</p>
   <p>On the free tier, exporting may show a short rewarded ad — the same whether you start from Settings or from a pain's detail screen. If the ad fails to load, the export proceeds anyway; an ad will never stand between you and your own data. Premium has no ads.</p>
   <p><strong>A free report covers the last 30 days</strong>, the same window the statistics screen uses. The report says so at the top, and Premium opens the whole history. A pain with nothing recorded in the last 30 days cannot be picked from the report list.</p>
-</section>
+<p>Free reports use the intersection of the selected dates and the latest 30-day access window. All dates still respects that free window. A range entirely before it is unavailable and displays an explanation. Premium can include the full history.</p><p>A report with a selected date range also includes <a href="#stats">previous-period comparison and marked extent</a>. Distinguish the average of daily mean intensity, the average of daily maximum extent, and the last valid body map in each period.</p></section>
 
 <section id="backup">
   <h2>Backup and restore</h2>
@@ -625,10 +562,6 @@
   <h3>Language</h3>
   <p>Settings → Language offers <strong>System default / 한국어 / English</strong>. The app's language can differ from your device language. The change applies immediately, and this manual opens in whichever language the app is set to.</p>
   <p>Symptom and treatment items you created yourself stay in the language you typed them in. Only the items the app ships with are translated.</p>
-  <figure class="shot">
-    <img src="../assets/img/en/11_settings_info.png" alt="Settings About section with version, User Manual and Privacy Policy rows" loading="lazy">
-    <figcaption><b>Settings → About</b> — <em>User Manual</em> opens this document in the app's current language.</figcaption>
-  </figure>
 
   <h3>Text size</h3>
   <p>Settings → Text size offers <strong>Small / Default / Large / Extra Large</strong>, with a live preview. It applies throughout the app.</p>
@@ -652,7 +585,7 @@
   </table>
   </div>
   <p>Ads are <strong>rewarded ads only</strong> — there is no banner anywhere in the app. You meet one in four places: from the third pain onwards (one ad each), from the second photo on a pain onwards (one ad each), when exporting a report, and when exporting a backup file.</p>
-  <p>Saving a record never shows an ad. <strong>Write as many pain and treatment records a day as you like</strong> (before the September 2026 update there was a three-a-day limit).</p>
+  <p>Saving a record never shows an ad. <strong>Write as many pain and treatment records a day as you like</strong> (the daily limit from earlier versions no longer applies).</p>
   <p>When an ad cannot be loaded — in airplane mode, for instance — the action simply continues without one. Health records are never held behind an ad.</p>
   <h3>Purchase and restore</h3>
   <p>Buy from Settings → Premium. After changing devices or reinstalling, sign in with the <strong>same Google account</strong> and tap <em>Restore purchase</em>. If a payment is still processing, Premium activates automatically once it completes.</p>
@@ -669,7 +602,7 @@
     <li><strong>Backup files are yours to manage.</strong> You decide where the exported <code>.tngd</code> file is kept.</li>
     <li><strong>The weather card on the home screen</strong> checks your approximate location (city-level accuracy) to fetch conditions from an external weather service. It is for display only and is not stored in your pain records. The rest of the app works normally if you decline the location permission.</li>
     <li><strong>Ads</strong> are shown on the free tier, and the ad provider's own policies apply to them.</li>
-  </ul>
+  <li><strong>UI usage information</strong> — anonymous events record screen views and button taps. These events do not contain pain intensity, symptoms, body parts, notes, treatment names, record dates or counts, or location.</li></ul>
   <p>Full details are in the <a href="https://choi32013.github.io/tongda-privacy/">privacy policy</a>, also reachable in the app via Settings → App info → Privacy policy.</p>
 </section>
 
@@ -699,9 +632,8 @@
   </details>
 
   <details>
-    <summary>I named a pain badly. Can I rename it?</summary>
-    <p><strong>Renaming is not currently supported</strong>, and neither is changing the status (active / chronic / resolved) — a pain you create always starts as "active".</p>
-    <p>If it holds almost no records yet, it is quicker to <a href="#manage">long-press and delete it</a> and create it again under the right name. If records have already accumulated, leave the name as it is: deleting takes every record and treatment attached to that pain with it, which is a far worse loss than an awkward name.</p>
+    <summary>I named a pain badly. Can I rename it?</summary><p>Yes. Long-press its card in Select Pain, choose <strong>Edit (rename)</strong>, enter the new name, and confirm. Records stay linked to the pain. Status changes are not supported. See <a href="#manage">managing a pain</a>.</p>
+
   </details>
 
   <details>

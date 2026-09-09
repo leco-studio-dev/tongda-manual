@@ -51,7 +51,7 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 | 리포트 구성 항목 | `data/backup/HtmlReportRepository.kt` |
 | 리포트는 **PDF 저장만** 가능 | UI 런처가 `CreateDocument("application/pdf")` 하나뿐 (`ui/settings/SettingsScreen.kt`, `ui/detail/DetailScreen.kt`). ViewModel 의 `exportReportToUri`(HTML 쓰기)와 `report_format_*` 문자열은 호출되지 않는 잔재이므로, 이 죽은 경로를 살리기 전까지 문서에 HTML 저장을 쓰지 말 것 |
 | 화면 용어 (한/영) | `res/values/strings.xml`, `res/values-en/strings.xml` |
-| 길게 눌러 삭제(wiggle) | `ui/common/WiggleChip.kt` + 호출부 3곳: `ui/issue/IssueSelectScreen.kt`(이슈, 확인 다이얼로그 있음), `ui/record/RecordScreen.kt`(증상 칩), `ui/treatment/TreatmentScreen.kt`(처치 칩). 칩 ⊖ 는 **직접 추가 항목=삭제 / 기본 항목=숨김**(`setSymptomEnabled(false)` / `setItemEnabled(false)`)으로 분기 |
+| 길게 눌러 관리 | `ui/common/WiggleChip.kt` + 호출부 3곳: `ui/issue/IssueSelectScreen.kt`(이슈 관리 → 이름 변경 또는 삭제 확인), `ui/record/RecordScreen.kt`(증상 칩), `ui/treatment/TreatmentScreen.kt`(처치 칩). 칩 ⊖ 는 **직접 추가 항목=삭제 / 기본 항목=숨김**(`setSymptomEnabled(false)` / `setItemEnabled(false)`)으로 분기 |
 | 숨긴 기본 항목은 복구 불가 | `setSymptomEnabled(…, true)` 를 호출하는 UI 가 없다. 같은 이름 재추가도 `disabled` 필터에 걸려 안 나타난다 (`data/prefs/SymptomRepository.kt` `effectiveSymptomsByCategory`) |
 | 기록 수정·삭제 진입점 | `ui/detail/DetailScreen.kt` 상단바 ✏️/🗑 (대상 = 현재 보고 있는 `recordId`), `ui/treatment/TreatmentDetailScreen.kt` 편집/삭제. 편집 저장 시 경고 다이얼로그 = `RecordScreen.kt:245`, `TreatmentScreen.kt` |
 | 자료 사진: 이슈 단위 첨부 | `data/db/IssueAttachment.kt` (painIssueId 로 이슈에 종속), `data/attachments/AttachmentRepository.kt` |
@@ -59,27 +59,34 @@ index.html         루트 — 언어 리다이렉트 + 폴백 선택 화면
 | 사진 무료 1장(이후 1장당 광고) / 20MB 상한 | `FreeLimitsRepository.FREE_ATTACHMENTS_PER_ISSUE`, `AttachmentRepository.MAX_FILE_BYTES` |
 | 사진은 백업 미포함 | `.tngd` 는 단일 JSON 통암호화(10MB 상한)라 파일을 담지 못한다. REPLACE_ALL 가져오기는 사진을 삭제하며 `settings_dialog_import_options` 에 경고가 있다 |
 | 사진 길게 눌러 삭제 = ✕ | `ui/attachments/AttachmentScreen.kt` (combinedClickable + ✕ 배지). 칩(⊖)과 달리 확인 창을 거친다 — 파일이 영구 삭제이기 때문 |
-| 이슈 이름·상태 변경 없음 | 생성 시 `status = "Active"` 고정(`ui/issue/IssueSelectViewModel.kt:77`), rename/status 변경 호출부 없음 |
+| 통증 이름 변경·관리창 | `ui/issue/IssueSelectScreen.kt`, `IssueSelectViewModel.renameIssue`: 길게 누르기 → 수정(이름 변경) / 삭제. 상태 변경 UI는 없음 |
 
-## 스크린샷
+## 현재 매뉴얼과 재사용 샘플
 
-`assets/img/ko/`, `assets/img/en/` — 언어별 23장, **720px 폭 PNG**(합계 약 2.5MB).
-vc196 · Pixel 1080×2400 에뮬레이터에서 언어별로 샘플 데이터를 새로 주입해 촬영했다.
+- 기준 앱: `app_dev` HEAD `1935b680f9b11d90d6b33bec3848b7f4865e3bc2`, 원격 `cada1b7`을 포함한 merge, `2.4.8 (253)`.
+- 매뉴얼 기존 HEAD `d050022` 및 기존 로컬 커밋은 보존한다. 아래 촬영·검증 자료는 v253 갱신 작업 시점의 기록이다.
+- `sample-data/README.md`: 한·영 fixture, 날짜 갱신 생성기, 앱 가져오기 가능한 TNGD 및 round-trip 검증.
+- `capture-record/README.md`: 촬영 환경·원본·이미지 목록·검수 내역.
+- `assets/img/{ko,en}/`: 기존 이미지는 324×720 PNG. 이번 이미지는 1080×2400 원본을 648×1440으로 균일 축소. 웹 표시 폭은 공용 CSS가 제어한다. 기존 README의 “720px 폭”은 잘못된 설명이었다.
+- 변경 없는 사진·알림 등 일부 기존 화면은 이전 촬영본을 유지한다. 모든 화면을 v253 촬영본이라고 간주하지 않는다.
 
-UI 가 바뀌면 다시 촬영해야 한다. 순서:
+## 최신 동작 근거
 
-1. 에뮬레이터 부팅 → 디버그 APK 설치
-2. 상태바 정리 (시계 09:30 고정, 알림 숨김):
-   ```
-   adb shell am broadcast -a com.android.systemui.demo -e command enter
-   adb shell am broadcast -a com.android.systemui.demo -e command clock -e hhmm 0930
-   adb shell am broadcast -a com.android.systemui.demo -e command notifications -e visible false
-   ```
-3. 설정에서 언어 선택 → **개발 도구 → 전부 삭제 후 주입** (샘플 시드는 로케일 대응이라
-   선택한 언어로 이슈명·메모가 들어간다). 언어를 바꿀 때마다 다시 주입할 것.
-4. `adb exec-out screencap -p` 로 캡처 → `sips -Z 720` 로 리사이즈해 같은 파일명으로 덮어쓴다.
-   파일명은 문서의 `<img src>` 와 1:1 이므로 **이름을 바꾸지 말 것**.
+- `ui/bodymap/BodyMapArea.kt`: 몸 mask 내부 rasterized union, 겹침 중복 제외. 경로 길이 합계 방식이 아님.
+- `ui/stats/StatsCalculator.kt`: 날짜별 평균 강도의 평균, 날짜별 최대 범위의 평균, 마지막 유효 바디맵 비교.
+- `ui/stats/components/{TrackingTabContent,PeriodComparisonCard,BodyMapChangeCard}.kt`: 무료 현재기간 요약, 이전기간 접근 불가와 기록 없음 구분, %p·유효기록일·중립적 겹침 범례.
+- `ui/stats/components/MonthSwingCards.kt`: 최악 대비 지금 / 가장 좋았을 때 대비 최악. 두 카드는 날짜별 최고 강도를 사용하며 일평균 그래프와 기준이 다름.
+- `ui/settings/ReportExportDialog.kt`, `data/backup/HtmlReportRepository.kt`: 전체/기간 선택, 무료 범위와 교집합. 지정한 기간이 있을 때 직전 동기간 비교를 구성함.
+- `ui/issue/IssueSelectScreen.kt`: 관리창·이름 변경.
+- 날짜/시간/기간은 `ui/common`의 `Tongda*PickerDialog` 계열을 공통 사용.
 
-바디맵 이미지는 "한 기록에 여러 강도"를 보여주려고 허리를 7, 다리를 4로 칠한 것이다.
-처치 상세 이미지는 전후 48시간 규칙이 실제로 표시되는 사례를 골랐다. 다시 찍을 때도
-같은 의도를 유지해야 캡션과 어긋나지 않는다.
+## 로컬 확인
+
+```sh
+python3 -m http.server 8873 --bind 127.0.0.1
+# http://127.0.0.1:8873/ko/ 또는 /en/
+python3 sample-data/generate.py --date 2026-09-09
+python3 sample-data/verify.py
+```
+
+생성기에는 Python `cryptography`, 검증기에는 `Pillow`가 필요하다. 생성기는 샘플 파일만 갱신하며 앱 데이터나 소스를 수정하지 않는다. 촬영 기준일을 바꾸면 앱에서 새 파일을 가져온 뒤 다시 촬영해야 한다.
